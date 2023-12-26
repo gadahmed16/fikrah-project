@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Kanit&family=Noto+Sans:wght@200;300;500&family=Nunito:ital@1&family=Playpen+Sans:wght@400;500&family=Raleway:wght@500&family=Roboto+Slab:wght@500&family=Rubik:wght@300;400&family=Sedgwick+Ave+Display&family=Tilt+Neon&family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Kanit&family=Noto+Sans:wght@200;300;500&family=Nunito:wght@600&family=Playpen+Sans:wght@400;500&family=Raleway:wght@500&family=Roboto+Slab:wght@500&family=Rubik:wght@300;400&family=Sedgwick+Ave+Display&family=Tilt+Neon&family=Work+Sans:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-family: 'Tilt Neon', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+/* The Intro Website */
+.IntroImg{
+    animation: TheEnterAni .6s linear ;
+}
+.TheLogoNameInIntroPage{
+    animation: TheEnterAniLogoName 0.9s linear ;
+}
+.TheLogoDisCratiptonInIntroPage{
+    animation: TheEnterAniLogoDisCrtaptoption 1s linear ;
+
+}
+.IntroPage{
+    text-align: center;
+}
+.IntroImg{
+    width: 600px;
+}
+.ContABS{
+    position: relative;
+    width: 562px;
+    margin-right: auto;
+    margin-left: auto;
+    bottom: 220px;
+}
+.TheLogoNameInIntroPage {
+    margin-top: -20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+@keyframes TheEnterAni {
+    0%{
+        position: relative;
+        top: 100px;
+        opacity: 0;
+    }
+    100%{
+        position: relative;
+        top: 0px;
+        opacity: 1;
+    }
+}
+@keyframes TheEnterAniLogoName {
+    0%{
+        position: relative;
+        top: 150px;
+        opacity: 0;
+    }
+    100%{
+        position: relative;
+        top: 0px;
+        opacity: 1;
+    }
+}
+@keyframes TheEnterAniLogoDisCrtaptoption {
+    0%{
+        position: relative;
+        top: 170px;
+        opacity: 0;
+    }
+    100%{
+        position: relative;
+        top: 0px;
+        opacity: 1;
+    }
+}
+.TheOutRoImg{
+    animation: TheOutAni .6s linear ;
+
+}
+.TheOutRoLogoName{
+    animation: TheOutAniLogoName 1s linear ;
+}
+.TheOutRoDis{
+    animation: TheOutAniLogoDisCrtaptoption 1.2s  linear ;
+}
+@keyframes TheOutAni {
+    0%{
+        position: relative;
+        bottom: 0px;
+        opacity: 1;
+    }
+    100%{
+        position: relative;
+        bottom: 100px;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+@keyframes TheOutAniLogoName {
+    0%{
+        position: relative;
+        bottom: 0px;
+        opacity: 1;
+    }
+    100%{
+        position: relative;
+        bottom: 150px;
+        opacity: 0;
+    }
+}
+@keyframes TheOutAniLogoDisCrtaptoption {
+    0%{
+        position: relative;
+        bottom: 0px;
+        opacity: 1;
+    }
+    100%{
+        position: relative;
+        bottom: 170px;
+        opacity: 0;
+    }
+}
+.disPLAYEDNONE{
+    display: none;
+}
+.IntroPage{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+/* The Start */
+*{
+    /* border: 1px solid black; */
+}
+nav{
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+.TheImgNav{
+    width: 65px;
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+.FirstPartInNav{
+    display: grid;
+    grid-template-columns:1fr 0.5fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.InputNav{
+    width: 100%;
+    margin-top: 20px;
+}
+.inputPart{
+    grid-column: 3/8;
+}
+.inputPart{
+    display: flex;
+
+}
