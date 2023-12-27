@@ -16,6 +16,10 @@
     font-family: 'Tilt Neon', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
+body{
+    background-color: #f5f3f0;
+    height: 2000px;
+}
 /* The Intro Website */
 .IntroImg{
     animation: TheEnterAni .6s linear ;
@@ -136,35 +140,102 @@
     top: 0px;
     width: 100%;
 }
+.TheProjectWord{
+    color: #f58634;
+    border-bottom: 1px solid #f58634;
+}
 /* The Start */
+/* Header */
 *{
     /* border: 1px solid black; */
 }
 nav{
-    padding: 2px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-}
-.TheImgNav{
-    width: 65px;
-    border: 0px;
-    border-radius: 5px;
-    padding: 5px;
-    cursor: pointer;
-}
-.FirstPartInNav{
-    display: grid;
-    grid-template-columns:1fr 0.5fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-}
-.InputNav{
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    position: fixed;
     width: 100%;
-    margin-top: 20px;
 }
-.inputPart{
-    grid-column: 3/8;
+.NavBrandImg{
+    width: 46px;
+    margin-top: 5px;
 }
-.inputPart{
+ul , li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.TheMainA{
+    font-size: 20px;
+}
+.TheMainUl{
     display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    position: relative;
+    top: 5px;
+    right: 100px;
+}
+.ImgAndInput{
+    position: relative;
+    left: 60px;
+    display: flex;
+    align-items: center;
+}
+.InputPart{
+    /* border: 1px solid black; */
+    height: 35px;
+    padding-top: 5px;
+    margin-top: 6px;
+    margin-left: 20px;
+    background-color: #edf3f8;
+    padding: 10px;
+    border-radius: 4px;
+    width: 240px;
+}
+.ImgAndInput , .InputPart{
+    display: flex;
+}
+.InputPart{
+    align-items: center;
+}
+.fa-magnifying-glass{
+    font-size: 20px;
+    background-color: #edf3f8;
+}
+.SearchInput{
+    background-color: #edf3f8;
+    /* height: 30px; */
+    position: relative;
+    /* bottom: 3.5px; */
+    border: 0px;
+    margin-top: 2px;
+    margin-left: 10px;
+    width: 300px;
 
+
+}
+.SearchInput:focus{
+    border: none;
+    outline: none;
+}
+.ssss{
+    display: none;
+    /* border: 1px solid black; */
+    cursor: pointer;
+    /* padding: 10px; */
+    position: relative;
+    right: 25px;
+    font-size: 22px;
+    margin-top: 7px;
+    /* background-color: #edf3f8; */
+}
+.UnkowImg{
+    width: 30px;
+    border-radius: 50%;
 }
