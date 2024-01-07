@@ -16,16 +16,29 @@
     font-family: 'Sedgwick Ave Display', cursive;
     font-family: 'Tilt Neon', sans-serif;
     font-family: 'Work Sans', sans-serif;
+    /* border: 1px solid black; */
 }
 
 body {
     background-color: #f5f3f0;
     height: 2000px;
 }
-
+header{
+    opacity: 0;
+}
+.headerEdit{
+    animation: TheHeaderEdit 0.5s linear;
+}
+@keyframes TheHeaderEdit {
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+}
 /* The Intro Website */
 .IntroImg {
     animation: TheEnterAni .6s linear;
+
 }
 
 .TheLogoNameInIntroPage {
@@ -164,7 +177,32 @@ body {
 .IntroPage {
     position: absolute;
     top: 0px;
-    width: 100%;
+    /* width: ; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width:602px) {
+
+    .IntroPage,
+    .ContABS {
+        width: 70%;
+        font-size: 15px;
+    }
+
+    .IntroImg {
+        width: 97%;
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+        /* bottom: -30px; */
+        margin-bottom: 25px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .TheProjectWord {
@@ -373,7 +411,7 @@ a {
     display: none;
 }
 
-@media (max-width:1195px) {
+@media (max-width:1211px) {
     .MoveIngOne {
         position: relative;
         top: 5.9px;
@@ -453,11 +491,6 @@ h6 {
     color: black;
 }
 
-main {
-    position: relative;
-    top: 100px;
-    background-color: white;
-}
 
 .InputPartSmallScreen {
     /* border: 1px solid black; */
@@ -530,85 +563,231 @@ main {
 }
 
 /* The Haperger Menu */
-.TheHAmpMenu{
+.TheHAmpMenu {
     display: none;
 }
+
 /* The Nav in Small Screan */
+.BottomNavBar {
+    display: none;
+}
+
 @media (max-width:1030px) {
-    .TheHAmpMenu{
+    .TheHAmpMenu {
         display: flex;
+        font-size: 30px;
+        margin-right: 10px;
+        margin: 10px 10px;
+        color: #f58634;
+        cursor: pointer;
     }
-    .RemovedPartInPhoneScrean , .TheMainUl{
+
+    .EditTheOpen {
+        cursor: pointer;
+    }
+
+    .RemovedPartInPhoneScrean,
+    .TheMainUl {
         display: none;
     }
-    nav{
+
+    nav {
         /* padding: 13.9px 0px; */
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .TheSMBar{
-        display: block;
-        height: 100px;
-    }
-    label {
-        display: flex;
-        flex-direction: column;
-        width: 70px;
-        cursor: pointer;
-        transform: scale(0.5);    
-    }
-    
-    label span {
-        background: #f58634;
-        border-radius: 10px;
-        height: 7px;
-        margin: 7px 0;
-        transition: .4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
-    
-    }
-    
-    
-    .TesTHAmp:nth-of-type(1) {
-        width: 50%;
-    
-    }
-    
-    .TesTHAmp:nth-of-type(2) {
+
+    /* Bottom NavBar */
+
+    .BottomNavBar {
+        background-color: white;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
         width: 100%;
+        text-align: center;
+        gap: 20px;
+        font-size: 30px;
+        position: fixed;
+        bottom: 0px;
+        padding: 10px 10px 10px 10px;
+        color: rgba(0, 0, 0, 0.678);
+        align-items: center;
     }
-    
-    
-    .TesTHAmp:nth-of-type(3) {
-        width: 75%;
-    
+
+    .AddNewPostPart {
+        border: 2px solid;
     }
-    
-    
-    input[type="checkbox"] {
-        display: none;
+
+    .activeIconNavBar {
+        color: black;
     }
-    
-    
-    input[type="checkbox"]:checked~span:nth-of-type(1) {
-        transform-origin: bottom;
-        transform: rotatez(45deg) translate(8px, 0px)
+
+    .BottomNavBar div {
+        /* border: 1px solid black; */
     }
-    
-    
-    input[type="checkbox"]:checked~span:nth-of-type(2) {
-    
-        transform-origin: top;
-        transform: rotatez(-45deg)
+
+    .OnClickIconBottomNavBar {
+        cursor: pointer;
     }
-    
-    
-    input[type="checkbox"]:checked~span:nth-of-type(3) {
-    
-        transform-origin: bottom;
-        width: 50%;
-        transform: translate(30px, -11px) rotatez(45deg);
-    
+
+    .AddNewPostPart {
+        font-size: 25px;
+        border: 1.5px solid #198754;
+        color: #198754;
     }
+}
+
+.TheRightPartInSmallScreanHamprgerMenu {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 50vw;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    display: none;
+}
+
+.TheRightPartInSmallScreanHamprgerMenuAnimationIn {
+    animation: TheMineNavSideShowIN 0.2s linear;
+}
+
+@keyframes TheMineNavSideShowIN {
+    0% {
+        transform: translateX(400px);
+    }
+}
+
+.TheHampMenu2 {
+    font-size: 30px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.HeaderHampMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f58634;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+}
+
+.TheSecondul {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 18px;
+}
+
+.TheAOfLiInSmallScreanHampMenu {
+    padding-left: 15px;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid black;
+    border-left: 0px solid;
+    border-right: 0px solid;
+    transition: all .3s linear;
+}
+
+.TheAOfLiInSmallScreanHampMenu:hover {
+    background-color: rgba(128, 128, 128, 0.30);
+    color: #f58634;
+}
+
+.btnGroups {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    align-content: center;
+
+}
+
+.inputSearchSmallScrean {
+    border: 1px solid black;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: #edf3f8;
+}
+
+.TheInputScrean {
+    margin: 5px 0px;
+}
+
+.Eidtmagnifying {
+    position: relative;
+    margin-bottom: 0.2px;
+}
+
+.InputSmallScreanHamp {
+    width: 80%;
+    background-color: #edf3f8;
+    border: none;
+}
+
+.InputSmallScreanHamp:focus {
+    border: none;
+    outline: none;
+}
+.OnClickIconBottomNavBar{
+    transition: all .3s linear;
     
+}
+.OnClickIconBottomNavBar:hover{
+    color: black;
+}
+/* The MAin COntnt */
+main{
+    display: grid;
+    /* grid-template-columns: 1fr 3fr 1fr; */
+    /* grid-template-rows: 1fr; */
+}
+.IMGpart{
+    border: 1px solid black;
+    position: relative;
+
+}
+.Banner{
+    width: 100%;
+    border: 1px solid black;
+}
+.Img{
+    text-align: center;
+    padding: 5px;
+    margin-right: auto;
+    border-radius: 50%;
+    margin-left: auto;
+
+}
+.TheImgSS{
+    background-color: white;
+    /* padding: 10px; */
+    border: 3px solid blue;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.ImgParts{
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.BannerImg{
+    width: 100%;
+}
+.IMGpart{
+    position: relative;
+}
+.Img{
+    position: relative;
+    bottom: 100px;
 }

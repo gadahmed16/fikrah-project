@@ -1,4 +1,5 @@
-let TheLogoImg = document.getElementsByClassName("IntroImg")[0];
+// The NavBar And Landing Page 
+{let TheLogoImg = document.getElementsByClassName("IntroImg")[0];
 let TheH1Logo = document.getElementsByClassName("TheLogoNameInIntroPage")[0];
 let TheDisLogo = document.getElementsByClassName("TheLogoDisCratiptonInIntroPage")[0];
 let TheIntroPage = document.getElementsByClassName("IntroPage")[0];
@@ -10,6 +11,11 @@ setTimeout(() => {
 setTimeout(() => {
     TheIntroPage.style = "display:none;";
 }, 2300);
+// The Header
+let TheHeader = document.getElementsByTagName("header")[0];
+setTimeout(() => {
+    TheHeader.style = " animation: TheHeaderEdit .5s linear  ; opacity:1;";  
+}, 2400);
 // TheSeachBarActive 
 let TheSearchBarActiveComponts = [...document.getElementsByClassName("ActiveOnClick")];
 let ExitMark = document.getElementsByClassName("ssss")[0];
@@ -64,9 +70,21 @@ function GetOutFromInput() {
     TheUl.style.display = "flex"
     TheNavBar.style.padding = "0px"
 }
-TheCompontsOnClick[2].addEventListener("blur",()=>{
-    GetOutFromInput()
+// TheCompontsOnClick[2].addEventListener("blur",()=>{
+//     GetOutFromInput()
+// })
+// The CheckBox Edit
+//  TheSide Navbar
+let TheSideNavBarParent = document.getElementsByClassName("TheRightPartInSmallScreanHamprgerMenu")[0];
+let TheBTNHampergerMenuOPEN = document.getElementsByClassName("TheHAmpMenu")[0];
+let TheBTNHampergerMenuClose = document.getElementsByClassName("CloseTheHamp")[0];
+TheBTNHampergerMenuOPEN.addEventListener("click" , () => {
+    TheSideNavBarParent.style.display = "block"
+    TheSideNavBarParent.classList.add("TheRightPartInSmallScreanHamprgerMenuAnimationIn");
 })
-CloseBTNINSMAllINput.addEventListener("blur",()=>{
-    GetOutFromInput()
-})
+TheBTNHampergerMenuClose.addEventListener("click" ,() => {
+    // TheSideNavBarParent.setAttribute("class","TheRightPartInSmallScreanHamprgerMenu TheRightPartInSmallScreanHamprgerMenuAnimationOUT")
+
+    TheSideNavBarParent.style.display = "none"
+})}
+// The Main Page
