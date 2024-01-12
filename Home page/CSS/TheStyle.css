@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Kanit&family=Noto+Sans:wght@200;300;500&family=Nunito:ital@1&family=Playpen+Sans:wght@400;500&family=Raleway:wght@500&family=Roboto+Slab:wght@500&family=Rubik:wght@300;400&family=Sedgwick+Ave+Display&family=Tilt+Neon&family=Work+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Kanit&family=Noto+Sans:wght@200;300;500&family=Nunito:wght@600&family=Playpen+Sans:wght@400;500&family=Raleway:wght@500&family=Roboto+Slab:wght@500&family=Rubik:wght@300;400&family=Sedgwick+Ave+Display&family=Tilt+Neon&family=Work+Sans:wght@300&display=swap');
-
-* {
+*{
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
@@ -64,6 +64,7 @@ header{
     margin-right: auto;
     margin-left: auto;
     bottom: 220px;
+    user-select: none;
 }
 
 .TheLogoNameInIntroPage {
@@ -212,9 +213,6 @@ header{
 
 /* The Start */
 /* Header */
-* {
-    /* border: 1px solid black; */
-}
 
 nav {
     display: flex;
@@ -566,12 +564,16 @@ main {
 .TheHAmpMenu {
     display: none;
 }
-
-/* The Nav in Small Screan */
-.BottomNavBar {
+@keyframes TheBottomNavAni {
+    0%{
+        transform: translateY(100px);
+    }
+}
+.BottomNavBar{
     display: none;
 }
 
+/* The Nav in Small Screan */
 @media (max-width:1030px) {
     .TheHAmpMenu {
         display: flex;
@@ -597,9 +599,6 @@ main {
         justify-content: space-between;
         align-items: center;
     }
-
-    /* Bottom NavBar */
-
     .BottomNavBar {
         background-color: white;
         display: grid;
@@ -614,31 +613,29 @@ main {
         padding: 10px 10px 10px 10px;
         color: rgba(0, 0, 0, 0.678);
         align-items: center;
+        visibility: hidden;
+        z-index: 1000;
     }
-
+    
     .AddNewPostPart {
         border: 2px solid;
     }
-
+    
     .activeIconNavBar {
         color: black;
     }
-
-    .BottomNavBar div {
-        /* border: 1px solid black; */
-    }
-
+    
     .OnClickIconBottomNavBar {
         cursor: pointer;
     }
-
+    
     .AddNewPostPart {
         font-size: 25px;
         border: 1.5px solid #198754;
         color: #198754;
     }
+    /* The Left Part */
 }
-
 .TheRightPartInSmallScreanHamprgerMenu {
     background-color: white;
     border: 2px solid black;
@@ -687,8 +684,7 @@ main {
 .TheAOfLiInSmallScreanHampMenu {
     padding-left: 15px;
     width: 100%;
-    display: inline-block;
-    border: 1px solid black;
+    display: inline-block; 
     border-left: 0px solid;
     border-right: 0px solid;
     transition: all .3s linear;
@@ -713,6 +709,7 @@ main {
     padding: 2px;
     border-radius: 5px;
     background-color: #edf3f8;
+    margin: 0px 5px;
 }
 
 .TheInputScrean {
@@ -744,50 +741,300 @@ main {
 /* The MAin COntnt */
 main{
     display: grid;
-    /* grid-template-columns: 1fr 3fr 1fr; */
-    /* grid-template-rows: 1fr; */
+    gap: 15px;
+    grid-template-columns: 1.5fr 3fr 1.5fr;
+    grid-template-rows: 1fr;
 }
-.IMGpart{
-    border: 1px solid black;
-    position: relative;
-
+/* The Left Part */
+.TheLeftPart{
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 4px black;
 }
-.Banner{
-    width: 100%;
-    border: 1px solid black;
-}
-.Img{
-    text-align: center;
-    padding: 5px;
-    margin-right: auto;
-    border-radius: 50%;
-    margin-left: auto;
-
-}
-.TheImgSS{
-    background-color: white;
-    /* padding: 10px; */
-    border: 3px solid blue;
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    margin-right: auto;
-    margin-left: auto;
-}
-.ImgParts{
-    border-radius: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+main div{
+    /* border: 1px solid black; */
+    border-radius: 3px;
+    
 }
 .BannerImg{
+    border-radius: 3px 3px 0px 0px;
     width: 100%;
 }
-.IMGpart{
-    position: relative;
+.ProfilImgNull{
+    width: 90%;
+    display: block;
+    margin-right: auto;
+    border-radius: 25%;
+    margin-left: auto;
+    border: 2px solid black;
+    transition: all .3s linear;
 }
-.Img{
+.WhiteContiner{
+    width: 22%;
+    margin-right: auto;
+    border-radius: 20%;
+    margin-left: auto;
+    /* padding: 1px; */
+    background-color: white;
+    /* padding: 2px; */
+    background-color: transparent;
     position: relative;
-    bottom: 100px;
+    bottom: 30px;
+    border: none;
+}
+.ProfilImgNull:hover{
+    filter: blur(1px);
+    box-shadow: 0px 0px 15px black;
+    cursor: pointer;
+}
+/* The User Text */
+.ImgText{
+    position: relative;
+    bottom: 20px;
+}
+.TheUserName{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.DisOfTheUserName{
+    text-align: center;
+    margin: 0px;
+}
+hr{
+    margin: 0px;
+}
+/* The User Statistics */
+.DFlex{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    margin-top: 10px;
+}
+.ChFont{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.NumberOfStatistics{
+    color: #f58634;
+}
+.SavedITem{
+    margin-top: 10px;
+    /* border: 1px solid black; */
+    padding-bottom: 1px;
+}
+/* Saved Item Part */
+.SavedITemP{
+    user-select: none;
+    cursor: pointer;
+    padding: 10px;
+    padding-left: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    /* border: 2px solid black; */
+    transition: all .3s linear;
+}
+.SavedITemP:hover{
+    background-color: #d3d3d3;
+}
+.TheLeftPartEdit{
+    position: relative;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    /* padding-left: 10px; */
+    padding-top: 20px;
+}
+.EventsPart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ThePartUlBottomLeftPart{
+    padding-left: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+.fa-plus{
+    padding-right: 10px;
+    color: gray;
+    transition: all .3s linear;
+}
+.DiscoverMore{
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+.TheLeftPartEdit2{
+    height: 200px;
+    text-align: center;
+    box-shadow: none;
+    border: 1px solid;
+}
+.TheLiftPartP , .EventsPart{
+    transition: all .1s linear;
+}
+.TheLiftPartP:hover{
+    color: #0077b5;
+}
+.EventsPart:hover .fa-plus{
+    color: #0077b5;
+}
+.DiscoverMore{
+    transition: all .2s linear;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.DiscoverMore:hover{
+    background-color: #d3d3d3;
+    cursor: pointer;
+    color: #0077b5;
+}
+.TheLeftPartContiner{
+    display: none;
+}
+@keyframes TheLeftPartANiStart {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+}
+/* The Center Part Write Post */
+.WritePostPart{
+    box-shadow: 0px 0px 4px black;
+    padding: 20px;
+    background-color: white;
+}
+.IconWriteParts{
+    display: flex;
+    /* gap: 20px; */
+    padding: 10px 0px;
+    gap: 10px;
+    /* padding-left: 10px; */
+}
+.TheIELEdiv{
+    padding: 0px 7px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.TheiEle{
+    font-size: 22px;
+    cursor: pointer;
+}
+.fa-camera{
+    color: #f58434dc;
+    transition: all .2s linear;
+}
+.fa-camera:hover{
+    color: #f58634;
+}
+.fa-video{
+    color: #d498a0;
+    transition: all .2s linear;
+}
+.fa-video:hover{
+    color: #e8a5ae;
+}
+.fa-calendar-days{
+    color: #74c6a4;
+    transition: all .1s linear;
+}
+.fa-calendar-days:hover{
+    color: #44e799;
+}
+.fa-feather-pointed{
+    color: #a382cc;
+    transition: all .2s linear;
+}
+.fa-feather-pointed:hover{
+    color: #b992e9;
+}
+.CreatePostP{
+    height: 40px;
+    display: flex;
+    user-select: none;
+    cursor: pointer;
+    align-items: center;
+    margin: 0px;
+    padding-left: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.TheHrWritePost{
+    margin: 10px 0px 0px 0px;
+}
+.CreatePostP{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* The B of Write Post  */
+@media (max-width:920px) {
+    .TheNameOfIcon{
+        display: none;
+    }
+}
+@media (max-width:1010px) {
+    .TheLeftPartContiner , .TheNameOfIcon{
+        display: none;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 3fr 1.5fr;
+        /* grid-template-columns: row;     */
+    }
+    .TheLeftPart{
+        display: none;
+    }
+    .TheCenter{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .TheRight{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+}
+/* The Post Edit */
+.PostsPart{
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 4px black;
+}
+.HeaderOfpost{
+    display: flex;
+    justify-content: space-between;
+}
+.TheImgOFpost{
+    width: 60px;
+    border-radius: 50%;
+}
+.FirstParTInHeader{
+    display: flex;
+    gap: 7px;
+}
+.TextAndName{
+    display: flex;
+    flex-direction: column;
+}
+.TheUserInfo{
+    font-size: 14px;
+}
+.DisOfPost{
+    margin-top: 20px;
+}
+.TheFooterOFPost{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
 }

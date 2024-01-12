@@ -13,15 +13,26 @@ setTimeout(() => {
 }, 2300);
 // The Header
 let TheHeader = document.getElementsByTagName("header")[0];
+let TheBottomNavBar = document.getElementsByClassName("BottomNavBar")[0];
+let TheLeftPart = document.getElementsByClassName("TheLeftPartContiner")[0];
 setTimeout(() => {
-    TheHeader.style = " animation: TheHeaderEdit .5s linear  ; opacity:1;";  
+    TheHeader.style = " animation: TheHeaderEdit .4s linear  ; opacity:1;";
+    TheLeftPart.style.animation = "TheLeftPartANiStart 0.4s linear"
+    TheLeftPart.style.display = "block"
 }, 2400);
+// T25yr El Bottom Nav Bar 34an bysl m4akl lma y7sal El animation Bta3 El NavBar Top
+// We Y7sal Animation Bardo
+setTimeout(() => {
+    TheBottomNavBar.style.visibility = "visible"
+    TheBottomNavBar.style.transition = "all .3s linear"
+    TheBottomNavBar.style.animation = "TheBottomNavAni .5s linear"
+}, 3000);
 // TheSeachBarActive 
 let TheSearchBarActiveComponts = [...document.getElementsByClassName("ActiveOnClick")];
 let ExitMark = document.getElementsByClassName("ssss")[0];
 let TheUl = document.getElementsByClassName("TheMainUl")[0];
 let TheNavBar = document.getElementsByTagName("nav")[0];
-// El Zorar Bta3 El 3dsa OW El KAlam BS Fy El Screan El Small 
+// El Zorar Bta3 El 2dsa OW El KAlam BS Fy El Screan El Small 
 let TheBTNInSmallScreanTOSearch = document.getElementsByClassName("TheSearchInputInSmallScreanEdit")[0]
 TheSearchBarActiveComponts.forEach(Element => {
     Element.addEventListener("click", () => {
@@ -88,3 +99,22 @@ TheBTNHampergerMenuClose.addEventListener("click" ,() => {
     TheSideNavBarParent.style.display = "none"
 })}
 // The Main Page
+// The Center Part Wirite Post Animation 
+let theParentOfWritePost = document.getElementsByClassName("WritePostPart")[0];
+let TheIeleInPartenWritePost = document.getElementsByClassName("TheIELEdiv");
+let TheIColor = ["#f58434dc", "#d498a0", "#74c6a4", "#a382cc"];
+// console.log(thep)
+for(let i =0;i< TheIeleInPartenWritePost.length;i++){
+    TheIeleInPartenWritePost[i].addEventListener("mouseover" , () => {
+        theParentOfWritePost.style = `box-shadow: 0px 0px 30px ${TheIColor[i]};`
+
+    })
+    TheIeleInPartenWritePost[i].addEventListener("mouseleave" , () => {
+        theParentOfWritePost.style.transition = `: all .3s linear;`
+        theParentOfWritePost.style = `transition: all .3s linear; box-shadow: 0px 0px 4px black;`
+    })
+}
+// JS form Posts
+function ThePostEle() {
+    
+}
