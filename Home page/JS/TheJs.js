@@ -15,11 +15,16 @@ setTimeout(() => {
 let TheHeader = document.getElementsByTagName("header")[0];
 let TheBottomNavBar = document.getElementsByClassName("BottomNavBar")[0];
 let TheLeftPart = document.getElementsByClassName("TheLeftPartContiner")[0];
+let TheCenterPart = document.getElementsByClassName("TheCenter")[0];
 setTimeout(() => {
     TheHeader.style = " animation: TheHeaderEdit .4s linear  ; opacity:1;";
     TheLeftPart.style.animation = "TheLeftPartANiStart 0.4s linear"
     TheLeftPart.style.display = "block"
+    TheCenterPart.style.animation = "TheCenteAni 1s linear"
+    TheCenterPart.style.display = "block"
+
 }, 2400);
+
 // T25yr El Bottom Nav Bar 34an bysl m4akl lma y7sal El animation Bta3 El NavBar Top
 // We Y7sal Animation Bardo
 setTimeout(() => {

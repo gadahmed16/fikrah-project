@@ -749,6 +749,7 @@ main{
 .TheLeftPart{
     /* border: 1px solid black; */
     box-shadow: 0px 0px 4px black;
+    background-color: white;
 }
 main div{
     /* border: 1px solid black; */
@@ -1011,6 +1012,7 @@ hr{
     padding: 20px;
     box-shadow: 0px 0px 4px black;
 }
+
 .HeaderOfpost{
     display: flex;
     justify-content: space-between;
@@ -1037,4 +1039,12 @@ hr{
     display: flex;
     gap: 10px;
     margin-top: 10px;
+}
+.TheCenter{
+    display: none;
+}
+@keyframes TheCenteAni {
+    0%{
+        opacity: 0;
+    }
 }
