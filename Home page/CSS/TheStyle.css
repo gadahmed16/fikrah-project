@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Kanit&family=Noto+Sans:wght@200;300;500&family=Nunito:ital@1&family=Playpen+Sans:wght@400;500&family=Raleway:wght@500&family=Roboto+Slab:wght@500&family=Rubik:wght@300;400&family=Sedgwick+Ave+Display&family=Tilt+Neon&family=Work+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Kanit&family=Noto+Sans:wght@200;300;500&family=Nunito:wght@600&family=Playpen+Sans:wght@400;500&family=Raleway:wght@500&family=Roboto+Slab:wght@500&family=Rubik:wght@300;400&family=Sedgwick+Ave+Display&family=Tilt+Neon&family=Work+Sans:wght@300&display=swap');
-*{
+
+* {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
@@ -23,18 +24,22 @@ body {
     background-color: #f5f3f0;
     height: 2000px;
 }
-header{
+
+header {
     opacity: 0;
 }
-.headerEdit{
+
+.headerEdit {
     animation: TheHeaderEdit 0.5s linear;
 }
+
 @keyframes TheHeaderEdit {
-    0%{
+    0% {
         opacity: 0;
         transform: translateY(-100px);
     }
 }
+
 /* The Intro Website */
 .IntroImg {
     animation: TheEnterAni .6s linear;
@@ -564,12 +569,14 @@ main {
 .TheHAmpMenu {
     display: none;
 }
+
 @keyframes TheBottomNavAni {
-    0%{
+    0% {
         transform: translateY(100px);
     }
 }
-.BottomNavBar{
+
+.BottomNavBar {
     display: none;
 }
 
@@ -599,6 +606,7 @@ main {
         justify-content: space-between;
         align-items: center;
     }
+
     .BottomNavBar {
         background-color: white;
         display: grid;
@@ -616,26 +624,28 @@ main {
         visibility: hidden;
         z-index: 1000;
     }
-    
+
     .AddNewPostPart {
         border: 2px solid;
     }
-    
+
     .activeIconNavBar {
         color: black;
     }
-    
+
     .OnClickIconBottomNavBar {
         cursor: pointer;
     }
-    
+
     .AddNewPostPart {
         font-size: 25px;
         border: 1.5px solid #198754;
         color: #198754;
     }
+
     /* The Left Part */
 }
+
 .TheRightPartInSmallScreanHamprgerMenu {
     background-color: white;
     border: 2px solid black;
@@ -684,7 +694,7 @@ main {
 .TheAOfLiInSmallScreanHampMenu {
     padding-left: 15px;
     width: 100%;
-    display: inline-block; 
+    display: inline-block;
     border-left: 0px solid;
     border-right: 0px solid;
     transition: all .3s linear;
@@ -731,36 +741,43 @@ main {
     border: none;
     outline: none;
 }
-.OnClickIconBottomNavBar{
+
+.OnClickIconBottomNavBar {
     transition: all .3s linear;
-    
+
 }
-.OnClickIconBottomNavBar:hover{
+
+.OnClickIconBottomNavBar:hover {
     color: black;
 }
+
 /* The MAin COntnt */
-main{
+main {
     display: grid;
     gap: 15px;
     grid-template-columns: 1.5fr 3fr 1.5fr;
     grid-template-rows: 1fr;
 }
+
 /* The Left Part */
-.TheLeftPart{
+.TheLeftPart {
     /* border: 1px solid black; */
     box-shadow: 0px 0px 4px black;
     background-color: white;
 }
-main div{
+
+main div {
     /* border: 1px solid black; */
     border-radius: 3px;
-    
+
 }
-.BannerImg{
+
+.BannerImg {
     border-radius: 3px 3px 0px 0px;
     width: 100%;
 }
-.ProfilImgNull{
+
+.ProfilImgNull {
     width: 90%;
     display: block;
     margin-right: auto;
@@ -769,7 +786,8 @@ main div{
     border: 2px solid black;
     transition: all .3s linear;
 }
-.WhiteContiner{
+
+.WhiteContiner {
     width: 22%;
     margin-right: auto;
     border-radius: 20%;
@@ -782,51 +800,61 @@ main div{
     bottom: 30px;
     border: none;
 }
-.ProfilImgNull:hover{
+
+.ProfilImgNull:hover {
     filter: blur(1px);
     box-shadow: 0px 0px 15px black;
     cursor: pointer;
 }
+
 /* The User Text */
-.ImgText{
+.ImgText {
     position: relative;
     bottom: 20px;
 }
-.TheUserName{
+
+.TheUserName {
     font-size: 25px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 0px;
 }
-.DisOfTheUserName{
+
+.DisOfTheUserName {
     text-align: center;
     margin: 0px;
 }
-hr{
+
+hr {
     margin: 0px;
 }
+
 /* The User Statistics */
-.DFlex{
+.DFlex {
     display: flex;
     justify-content: space-between;
     padding: 0px 10px;
     margin-top: 10px;
 }
-.ChFont{
+
+.ChFont {
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
-.NumberOfStatistics{
+
+.NumberOfStatistics {
     color: #f58634;
 }
-.SavedITem{
+
+.SavedITem {
     margin-top: 10px;
     /* border: 1px solid black; */
     padding-bottom: 1px;
 }
+
 /* Saved Item Part */
-.SavedITemP{
+.SavedITemP {
     user-select: none;
     cursor: pointer;
     padding: 10px;
@@ -837,10 +865,12 @@ hr{
     /* border: 2px solid black; */
     transition: all .3s linear;
 }
-.SavedITemP:hover{
+
+.SavedITemP:hover {
     background-color: #d3d3d3;
 }
-.TheLeftPartEdit{
+
+.TheLeftPartEdit {
     position: relative;
     top: 20px;
     display: flex;
@@ -849,116 +879,149 @@ hr{
     /* padding-left: 10px; */
     padding-top: 20px;
 }
-.EventsPart{
+
+.EventsPart {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.ThePartUlBottomLeftPart{
+
+.ThePartUlBottomLeftPart {
     padding-left: 5px;
     cursor: pointer;
     user-select: none;
 }
-.fa-plus{
+
+.fa-plus {
     padding-right: 10px;
     color: gray;
     transition: all .3s linear;
 }
-.DiscoverMore{
+
+.DiscoverMore {
     text-align: center;
     padding: 10px;
     padding-bottom: 20px;
 }
-.TheLeftPartEdit2{
+
+.TheLeftPartEdit2 {
     height: 200px;
     text-align: center;
     box-shadow: none;
     border: 1px solid;
 }
-.TheLiftPartP , .EventsPart{
+
+.TheLiftPartP,
+.EventsPart {
     transition: all .1s linear;
 }
-.TheLiftPartP:hover{
+
+.TheLiftPartP:hover {
     color: #0077b5;
 }
-.EventsPart:hover .fa-plus{
+
+.EventsPart:hover .fa-plus {
     color: #0077b5;
 }
-.DiscoverMore{
+
+.DiscoverMore {
     transition: all .2s linear;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.DiscoverMore:hover{
+
+.DiscoverMore:hover {
     background-color: #d3d3d3;
     cursor: pointer;
     color: #0077b5;
 }
-.TheLeftPartContiner{
+
+.TheLeftPartContiner {
     display: none;
 }
+
 @keyframes TheLeftPartANiStart {
-    0%{
+    0% {
         opacity: 0;
         transform: translateX(-100px);
     }
 }
+
 /* The Center Part Write Post */
-.WritePostPart{
+.WritePostPart {
     box-shadow: 0px 0px 4px black;
     padding: 20px;
     background-color: white;
 }
-.IconWriteParts{
+
+.IconWriteParts {
     display: flex;
     /* gap: 20px; */
     padding: 10px 0px;
     gap: 10px;
     /* padding-left: 10px; */
 }
-.TheIELEdiv{
+
+.TheIELEdiv {
     padding: 0px 7px;
     cursor: pointer;
     user-select: none;
     display: flex;
     align-items: center;
     gap: 7px;
+    transition: all .3s linear;
+    color: rgba(0, 0, 0, 0.712);
 }
-.TheiEle{
+
+.TheIELEdiv:hover {
+    color: black;
+    transform: scale(1.05);
+}
+
+.TheiEle {
     font-size: 22px;
     cursor: pointer;
 }
-.fa-camera{
+
+.fa-camera {
     color: #f58434dc;
     transition: all .2s linear;
 }
-.fa-camera:hover{
+
+.fa-camera:hover {
     color: #f58634;
 }
-.fa-video{
+
+.fa-video {
     color: #d498a0;
     transition: all .2s linear;
 }
-.fa-video:hover{
+
+.fa-video:hover {
     color: #e8a5ae;
 }
-.fa-calendar-days{
+
+.fa-calendar-days {
     color: #74c6a4;
     transition: all .1s linear;
 }
-.fa-calendar-days:hover{
+
+.fa-calendar-days:hover {
     color: #44e799;
 }
-.fa-feather-pointed{
+
+.fa-feather-pointed {
     color: #a382cc;
     transition: all .2s linear;
 }
-.fa-feather-pointed:hover{
+
+.fa-feather-pointed:hover {
     color: #b992e9;
 }
-.CreatePostP{
+
+.CreatePostP {
     height: 40px;
     display: flex;
     user-select: none;
@@ -969,10 +1032,12 @@ hr{
     border: 2px solid black;
     border-radius: 20px;
 }
-.TheHrWritePost{
+
+.TheHrWritePost {
     margin: 10px 0px 0px 0px;
 }
-.CreatePostP{
+
+.CreatePostP {
     display: flex;
     gap: 10px;
     align-items: center;
@@ -980,71 +1045,245 @@ hr{
 
 /* The B of Write Post  */
 @media (max-width:920px) {
-    .TheNameOfIcon{
+    .TheNameOfIcon {
         display: none;
     }
 }
+
 @media (max-width:1010px) {
-    .TheLeftPartContiner , .TheNameOfIcon{
+
+    .TheLeftPartContiner,
+    .TheNameOfIcon {
         display: none;
     }
-    main{
+
+    main {
         display: grid;
         grid-template-columns: 3fr 1.5fr;
         /* grid-template-columns: row;     */
     }
-    .TheLeftPart{
+
+    .TheLeftPart {
         display: none;
     }
-    .TheCenter{
+
+    .TheCenter {
         grid-column: 1/2;
         grid-row: 1/2;
     }
-    .TheRight{
+
+    .TheRight {
         grid-column: 2/3;
         grid-row: 1/2;
     }
 }
+
 /* The Post Edit */
-.PostsPart{
+.PostsPart {
     margin-top: 40px;
     background-color: white;
     padding: 20px;
     box-shadow: 0px 0px 4px black;
 }
 
-.HeaderOfpost{
+.HeaderOfpost {
     display: flex;
     justify-content: space-between;
 }
-.TheImgOFpost{
+
+.TheImgOFpost {
     width: 60px;
     border-radius: 50%;
 }
-.FirstParTInHeader{
+
+.FirstParTInHeader {
     display: flex;
     gap: 7px;
 }
-.TextAndName{
+
+.TextAndName {
     display: flex;
     flex-direction: column;
 }
-.TheUserInfo{
+
+.TheUserInfo {
     font-size: 14px;
 }
-.DisOfPost{
+
+.DisOfPost {
     margin-top: 20px;
 }
-.TheFooterOFPost{
+
+.TheFooterOFPost {
     display: flex;
     gap: 10px;
     margin-top: 10px;
 }
-.TheCenter{
+
+.TheCenter {
     display: none;
 }
+
 @keyframes TheCenteAni {
-    0%{
+    0% {
         opacity: 0;
     }
+}
+
+/* Img Continer */
+.TheImgEleInPost {
+    width: 100%;
+    margin-bottom: 20px;
+    /* transform: scale(1.01); */
+}
+
+/* The Right Part */
+
+.AddFeedH1DisPlay {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.HeaderPartAddYourFeed {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 20px 10px; */
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.fa-circle-info {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.ProfilesPart {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0px 20px;
+    margin-top: 10px;
+}
+
+.TheViewAllCommyA {
+    margin: 20px;
+    padding: 15px 10px;
+    /* width: 100%; */
+}
+
+.TheViewAllCommyP {
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    color: #0674db;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .1s linear;
+}
+
+.FollowBTNInAddFeed {
+    border: 2px solid #212529;
+    border-radius: 15px;
+    font-size: 13px;
+    padding: 1px 15px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: transparent;
+    transition: all .2s linear;
+}
+
+.JopName {
+    opacity: .5;
+}
+
+.FollowBTNInAddFeed:hover {
+    background-color: #212529;
+    color: white;
+    box-shadow: 0px 0px 20px #212529;
+    /* transform: translateY(-2px); */
+    transform: scale(1.04);
+}
+
+.Postive {
+    font-size: 17px;
+    padding-right: 4px;
+}
+
+.TheViewAllCommyP:hover {
+    color: #0358a7;
+}
+
+.TheViewAllCommyP:hover i {
+    color: #0358a7;
+}
+
+.AddFeedH1DisPlayEdit {
+    font-size: 14px;
+}
+
+.TheRight {
+    display: none;
+}
+
+@keyframes TheRightAniIn {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+}
+.NewBody{
+    margin: 10px 6px;
+}
+.TheHeaderOfNew{
+    font-size: 15px;
+    font-weight: bold;
+}
+.TheDisOfNew{
+    font-size: 13px;
+}
+/* Create Post Part */
+.CreatePostPart{
+    border: 1px solid black ;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.432);
+    margin-right: auto;
+    margin-left: auto;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    /* text-align: center; */
+}
+.CreatePostForm{
+    position: relative;
+    top: 130px;
+    background-color: white;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5px;
+    padding: 5px;
+}
+.HeaderOfCreatePostPArt{
+    display: flex;
+    /* gap: 20px; */
+}
+.TheListEleOfFunctions{
+    font-size: 15px;
+    /* border-right: 1px solid black; */
+    border-radius: 0px;
+    padding: 2px 5px;
+}
+.TheHrCreateEle{
+    transform: rotate(180deg);
+    height: 30px;
+    margin: auto;
+    border: 0.1px solid black;
+    color: black;
+    background-color: black;
 }
