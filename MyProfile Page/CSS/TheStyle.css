@@ -264,7 +264,7 @@ a {
 }
 
 .HomePageIconNavBar {
-    color: black;
+    /* color: black; */
     position: relative;
     bottom: .2px;
 }
@@ -653,10 +653,9 @@ main {
     width: 50vw;
     position: absolute;
     right: 0px;
-    top: 65px;
+    top: 0px;
     height: 100%;
     display: none;
-    z-index: 99999;
 }
 
 .TheRightPartInSmallScreanHamprgerMenuAnimationIn {
@@ -751,749 +750,260 @@ main {
 .OnClickIconBottomNavBar:hover {
     color: black;
 }
-
-/* The MAin COntnt */
-main {
+.TheIconText{
+    color: black;
+}
+/* Edit The Profile Page */
+body{
+    background-color: #fefefe;
+}
+main{
     display: grid;
-    gap: 15px;
-    grid-template-columns: 1.5fr 3fr 1.5fr;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr;
 }
-
-/* The Left Part */
-.TheLeftPart {
-    /* border: 1px solid black; */
-    box-shadow: 0px 0px 4px black;
-    background-color: white;
-}
-
-main div {
-    /* border: 1px solid black; */
-    border-radius: 3px;
-
-}
-
-.BannerImg {
-    border-radius: 3px 3px 0px 0px;
-    width: 100%;
-}
-
-.ProfilImgNull {
-    width: 90%;
-    display: block;
-    margin-right: auto;
-    border-radius: 25%;
-    margin-left: auto;
-    border: 2px solid black;
-    transition: all .3s linear;
-}
-
-.WhiteContiner {
-    width: 22%;
-    margin-right: auto;
-    border-radius: 20%;
-    margin-left: auto;
-    /* padding: 1px; */
-    background-color: white;
-    /* padding: 2px; */
-    background-color: transparent;
-    position: relative;
-    bottom: 30px;
-    border: none;
-}
-
-.ProfilImgNull:hover {
-    filter: blur(1px);
-    box-shadow: 0px 0px 15px black;
-    cursor: pointer;
-}
-
-/* The User Text */
-.ImgText {
-    position: relative;
-    bottom: 20px;
-}
-
-.TheUserName {
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 0px;
-}
-
-.DisOfTheUserName {
-    text-align: center;
-    margin: 0px;
-}
-
-hr {
-    margin: 0px;
-}
-
-/* The User Statistics */
-.DFlex {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 10px;
-    margin-top: 10px;
-}
-
-.ChFont {
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.NumberOfStatistics {
-    color: #f58634;
-}
-
-.SavedITem {
-    margin-top: 10px;
-    /* border: 1px solid black; */
-    padding-bottom: 1px;
-}
-
-/* Saved Item Part */
-.SavedITemP {
-    user-select: none;
-    cursor: pointer;
-    padding: 10px;
-    padding-left: 10px;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    /* border: 2px solid black; */
-    transition: all .3s linear;
-}
-
-.SavedITemP:hover {
-    background-color: #d3d3d3;
-}
-
-.TheLeftPartEdit {
-    position: relative;
-    top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    /* padding-left: 10px; */
-    padding-top: 20px;
-}
-
-.EventsPart {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.ThePartUlBottomLeftPart {
-    padding-left: 5px;
-    cursor: pointer;
-    user-select: none;
-}
-
-.fa-plus {
-    padding-right: 10px;
-    color: gray;
-    transition: all .3s linear;
-}
-
-.DiscoverMore {
-    text-align: center;
-    padding: 10px;
-    padding-bottom: 20px;
-}
-
-.TheLeftPartEdit2 {
-    height: 200px;
-    text-align: center;
-    box-shadow: none;
-    border: 1px solid;
-}
-
-.TheLiftPartP,
-.EventsPart {
-    transition: all .1s linear;
-}
-
-.TheLiftPartP:hover {
-    color: #0077b5;
-}
-
-.EventsPart:hover .fa-plus {
-    color: #0077b5;
-}
-
-.DiscoverMore {
-    transition: all .2s linear;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.DiscoverMore:hover {
-    background-color: #d3d3d3;
-    cursor: pointer;
-    color: #0077b5;
-}
-
-.TheLeftPartContiner {
-    display: none;
-}
-
-@keyframes TheLeftPartANiStart {
-    0% {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-}
-
-/* The Center Part Write Post */
-.WritePostPart {
-    box-shadow: 0px 0px 4px black;
-    padding: 20px;
-    background-color: white;
-}
-
-.IconWriteParts {
-    display: flex;
-    /* gap: 20px; */
-    padding: 10px 0px;
-    gap: 10px;
-    /* padding-left: 10px; */
-}
-
-.TheIELEdiv {
-    padding: 0px 7px;
-    cursor: pointer;
-    user-select: none;
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    transition: all .3s linear;
-    color: rgba(0, 0, 0, 0.712);
-}
-
-.TheIELEdiv:hover {
-    color: black;
-    transform: scale(1.05);
-}
-
-.TheiEle {
-    font-size: 22px;
-    cursor: pointer;
-}
-
-.fa-camera {
-    color: #f58434dc;
-    transition: all .2s linear;
-}
-
-.fa-camera:hover {
-    color: #f58634;
-}
-
-.fa-video {
-    color: #d498a0;
-    transition: all .2s linear;
-}
-
-.fa-video:hover {
-    color: #e8a5ae;
-}
-
-.fa-calendar-days {
-    color: #74c6a4;
-    transition: all .1s linear;
-}
-
-.fa-calendar-days:hover {
-    color: #44e799;
-}
-
-.fa-feather-pointed {
-    color: #a382cc;
-    transition: all .2s linear;
-}
-
-.fa-feather-pointed:hover {
-    color: #b992e9;
-}
-
-.CreatePostP {
-    height: 40px;
-    display: flex;
-    user-select: none;
-    cursor: pointer;
-    align-items: center;
-    margin: 0px;
-    padding-left: 10px;
-    border: 2px solid black;
-    border-radius: 20px;
-}
-
-.TheHrWritePost {
-    margin: 10px 0px 0px 0px;
-}
-
-.CreatePostP {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-/* The B of Write Post  */
-@media (max-width:920px) {
-    .TheNameOfIcon {
-        display: none;
-    }
-}
-
-@media (max-width:1010px) {
-
-    .TheLeftPartContiner,
-    .TheNameOfIcon {
-        display: none;
-    }
-
-    main {
-        display: grid;
-        grid-template-columns: 3fr 1.5fr;
-
-        /* grid-template-columns: row;     */
-    }
-
-    .TheLeftPart {
-        display: none;
-    }
-
-    .TheCenter {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-
-    .TheRight {
-        grid-column: 2/3;
-        grid-row: 1/2;
-    } 
-    .AddFeedPart {
-        display: block;
-    }
-}
-@media (max-width:682px) {
-    .TheLeftPartContiner,
-    .TheNameOfIcon,
-    .TheRight {
-        display: none;
-    }
-
-    main {
-        display: grid;
-        grid-template-columns: 3fr 1.5fr;
-
-        /* grid-template-columns: row;     */
-    }
-
-    .TheLeftPart {
-        display: none;
-    }
-
-    .TheCenter {
-        grid-column: 1/-1;
-        grid-row: 1/2;
-    }
-}
-/* The Post Edit */
-.PostsPart {
-    margin-top: 40px;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0px 0px 4px black;
-}
-
-.HeaderOfpost {
-    display: flex;
-    justify-content: space-between;
-}
-
-.TheImgOFpost {
-    width: 60px;
-    border-radius: 50%;
-}
-
-.FirstParTInHeader {
-    display: flex;
-    gap: 7px;
-}
-
-.TextAndName {
-    display: flex;
-    flex-direction: column;
-}
-
-.TheUserInfo {
-    font-size: 14px;
-}
-
-.DisOfPost {
-    margin-top: 20px;
-}
-
-.TheFooterOFPost {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.TheCenter {
-    display: none;
-}
-
-@keyframes TheCenteAni {
-    0% {
-        opacity: 0;
-    }
-}
-
-/* Img Continer */
-.TheImgEleInPost {
-    width: 100%;
-    margin-bottom: 20px;
-    /* transform: scale(1.01); */
-}
-
-/* The Right Part */
-
-.AddFeedH1DisPlay {
-    font-size: 17px;
-    font-weight: bold;
-}
-
-.HeaderPartAddYourFeed {
-    display: flex;
-    justify-content: space-between;
-    /* margin: 20px 10px; */
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.fa-circle-info {
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.ProfilesPart {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin: 0px 20px;
-    margin-top: 10px;
-}
-
-.TheViewAllCommyA {
-    margin: 20px;
-    padding: 15px 10px;
-    /* width: 100%; */
-}
-
-.TheViewAllCommyP {
-    cursor: pointer;
-    font-size: 14px;
-    text-transform: capitalize;
-    margin-bottom: 0px;
-    color: #0674db;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: all .1s linear;
-}
-
-.FollowBTNInAddFeed {
-    border: 2px solid #212529;
-    border-radius: 15px;
-    font-size: 13px;
-    padding: 1px 15px;
-    margin-top: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: transparent;
-    transition: all .2s linear;
-}
-
-.JopName {
-    opacity: .5;
-}
-
-.FollowBTNInAddFeed:hover {
-    background-color: #212529;
-    color: white;
-    box-shadow: 0px 0px 20px #212529;
-    /* transform: translateY(-2px); */
-    transform: scale(1.04);
-}
-
-.Postive {
-    font-size: 17px;
-    padding-right: 4px;
-}
-
-.TheViewAllCommyP:hover {
-    color: #0358a7;
-}
-
-.TheViewAllCommyP:hover i {
-    color: #0358a7;
-}
-
-.AddFeedH1DisPlayEdit {
-    font-size: 14px;
-}
-
-.TheRight {
-    display: none;
-}
-
-@keyframes TheRightAniIn {
-    0% {
-        transform: translateX(100px);
-        opacity: 0;
-    }
-}
-
-.NewBody {
-    margin: 10px 6px;
-}
-
-.TheHeaderOfNew {
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.TheDisOfNew {
-    font-size: 13px;
-}
-
-/* Create Post Part */
-.CreatePostPart {
-    border: 1px solid black;
-    width: 100%;
-    height: 500%;
-    background-color: rgba(0, 0, 0, 0.432);
-    margin-right: auto;
-    margin-left: auto;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    /* text-align: center; */
-    display: none;
-}
-@keyframes TheFormOfPostShowIn {
-    0%{
-        opacity: 0;
-    }
-}
-@keyframes TheFormOfPostShowOut {
-    0%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    }
-}
-.CreatePostForm {
-    position: relative;
-    top: 5px;
-    background-color: white;
-    /* width: 40%; */
-    width: 450.188px;
-    margin-right: auto;
-    margin-left: auto;
-    border-radius: 5px;
-    padding: 5px;
-}
-
-.HeaderOfCreateAPost {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    font-size: 20px;
-}
-
-.fa-circle-xmark {
-    color: gray;
-    cursor: pointer;
-}
-
-.HeaderOfCreateAPost .TheCloseIcon {
-    position: absolute;
-    right: 10px;
-}
-
-.UserNamePostEdit {
-    font-size: 17px;
-    position: relative;
-    top: 3px;
-}
-
-.form-select {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 5px;
-}
-
-.TheHrPostCreate {
-    margin: 10px 0px;
-}
-
-.WritePostPartInput {
-    width: 100%;
-    padding: 5px;
-    text-align: start;
-    font-weight: bold;
-}
-
-.ChangeColorBTN {
-    border: 2px solid black;
-    border-radius: 5px;
-    display: inline-flex;
-    padding: 3px 20px;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);
-    font-weight: bold;
-    color: black;
-    user-select: none;
-    cursor: pointer;
-}
-.ProPrtisOfText{
-    display: flex;
-    gap: 6px;
-}
-.ChangeColorBTN p {
-    margin: 0px;
-}
-.PostBTn{
-    width: 100%;
-    margin-top: 0px;
-}
-.AddImg{
-    background-image: none;
-    transition: all .2s linear;
-    color: #212529;
-    align-items: center;
-}
-.AddImg:hover{
-    background-color: #212529;
-    font-weight: 100;
-    color: white;
-}
-.alert-secondary{
-    margin-bottom: 10x;
-    display: flex;
-    /* align-items: center; */
-    gap: 15px;
-}
-.AddImg p{
-    background-image: none;
-    display: flex;
-    gap: 7px;
-    align-items: center;
-}
-.TheErrorsOfPost{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: bold;
-    color: red;
-    display: none;
-}
-.EditCir{
-    position: relative;
-    top: 2px;
-}
-.TheTextDis{
+/* Column one */
+body{
+    background-color: #f5f3f0;
+}
+.coulmnOne{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5,auto);
-    word-break: break-all;    
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
 }
-.dragImagePart{
-    margin: 20px 0px;
-    font-size: 20px;
-    padding: 50px 0px;
-    border: 3px  dotted #0674db;
+.ProfIleNameAndInfo , .socialmediaParnt , .TheChartOne{
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.ProfileImage{
+    width: 100px;
+    border-radius: 50%;
+}
+.ImageParnt{
     text-align: center;
-    user-select: none   ;
 }
-.EditOfImage{
-    color: #0674db;
-    font-size: 35px;
-    margin-bottom: 7px;
+.DisOfImage{
+    text-align: center;
+    margin-top: 15px;
 }
-.UnDraged{
+.UserName{
+    font-size: 25px;
+}
+.DisOfUserName{
+    font-weight: 100;
+    padding: 15px;
+    border-radius: 5px;
+}
+.fa-chrome , .fa-github{
+    color: #343a40;
+}
+.fa-facebook{
+    color: #316FF6;
+}
+.fa-instagram{
+    color: #dc4b53;
+}
+.fa-twitter{
+    color: #1d9ceb;
+}
+.socialmediaEle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    align-items: center;
+}
+.Edit32{
+    display: flex;
+    gap: 40;
+}
+.NameAndIcon{
+    display: flex;
+    align-items: center;
+    gap: 5px    ;
+}
+.TheHrEle1{
+    margin: 10px 0px;
+}
+.TheBtnEditProfile{
+    position: relative;
+    top: 40px;
+    height: 50px;
+    width: 100%;
+}
+.CoulmnTwo{
+    grid-column: 2/4;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.TheInfo{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+.TheRowOfInfo{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-rows: 1fr;
+    /* gap: 200px; */
+    /* justify-content: space-between; */
+
+    align-items: center;
     user-select: none;
-    text-align: center;
-    border: 4px dotted black;
-    padding: 40px;
-    font-size: 20px;
+}
+.TheDispaly{
     font-weight: bold;
-    margin: 20px 0px;
 }
-.EditFaImage{
-    width: 50px;
+.TheDispaly , .TheOutPut{
+    /* border: 1px solid black; */
+    margin-bottom: 0px;
 }
-small{
-    font-size: 10px;
+.TheOutPut{
+    user-select: text;
+}
+.TheHrElementTwo{
+    margin: 15px 0px;
+}
+.DisOfUserNameParnt{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.TheBoxShadow{
+    box-shadow: 0px 0px 4px black;
+}
+.TheChartEle{
+    margin-bottom: 5px;
+}
+.TheChartParnt{
+    border: 2px solid black;
+    height: 18px;
+    background-color: #316ff611;
+    border-radius: 6px;
+}
+.TheDisplayOfDisplay{
+    display: block;
+    margin-bottom: 10px;
+}
+.TheChartElement{
+    border-radius: 4px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: #316FF6;
+    height: 100%;
+    width: 70%;
+}
+.TheChartElementTwo{
+    width: 50%;
+}
+.TheChartElementOne{
+    width: 10%;
+}
+.TheChartElementThree{
+    width: 90%;
+}
+.TheChartElementFour{
+    width: 100%;
+}
+.TheChartElementFive{
+    width: 20%;
+}
+.socialmediaParnt{
+    position: relative;
+}
+.Plus{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    /* top: 25px; */
+    bottom: 10px;
+
+    /* position: relative; */
+    text-align: center;
+    background-color: #343a40;
+    color: white;
+    width: 94%;
+    cursor: pointer;
+    transition: all .19s linear;
+}
+.Plus:hover{
+    background-color: #24272b;
+}
+.TheBigParntDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.TheParntOfIconAndName{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.TheURLofLink{
+    cursor: pointer;
+}
+#ErrorB{
+    display: none;
+    color: red;
+    margin-top: 5px;    
+}
+.TheImageProfile{
+    width: 100%;
+    border: 1.5px solid black;
+}
+.ImageArea{
+    position: relative;
+}
+.TheInputFile{
+    display: none;
+}
+.TheDragAreaContent{
+    text-align: center;
+    border-radius: 10px;
+    border: 4px dashed #0061f293;
+    padding: 70px 10px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.ImageArea{
+    display: none;
 }
 .BrowseBTN{
-    color: #0674db;
+    color: #0061f2;
     text-decoration: underline;
     cursor: pointer;
+    font-weight: bold;
 }
-.BrowseBTN.hover{
-    color: #0084ff;
+small{
+    font-size: 13px;
+    margin-top: 25px;
 }
-.TheRealInputFIle{
+.Error{
+    color: red;
     display: none;
+    margin-top:5px;
 }
-.TheImageScrean{
-    margin-top: 20px;
-    position: relative;
-    border-radius: 10px;
-}
-.TheImagesrc{
+.TheOutPutImage{
     width: 100%;
+    border-radius: 7px;
+    border: 2px solid #292929;
 }
-.TheDragArea{
-    display: none;
-    position: relative;
-}
-.TheCloseIconInDargImage{
+.EditXMark{
+    padding: 1px 5px;
+    border-radius: 2px;
     position: absolute;
     top: 10px;
-    cursor: pointer;
     right: 10px;
-}
-.TheERrorUploadElement{
-        display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: bold;
-    color: red;
-    margin-top: 10px;
-    display: none;
-}
-.TheVideoOutScreanView{
-    width: 100%;
-    display: none;
-}
-.fa-earth-americas{
-    margin-left: 3px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #292929;
+    background-color: white;
 }
 .mesdnu {
     background-color: transparent;
@@ -1544,13 +1054,20 @@ nav{
     height: 65px;
 }
 .ProFilePart{
-    color: #625959;
-    transition: .2s linear;
-}
-.ProFilePart.hover{
     color: black;
 }
 .TheRightPartInSmallScreanHamprgerMenu{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 50vw;
+    position: absolute;
+    right: 0px;
+    top: 65px;
+    height: 100%;
+    display: none;
+    z-index: 99999;
+
 }
 @keyframes TheSideNavIn {
     0%{
@@ -1566,14 +1083,6 @@ nav{
         transform: translateX(300px);
     }
 }
-.XMARK{
-    position: absolute;
-    font-size: 20px;
-    background-color: white;
-    padding: 5px;
-    border-radius: 3px;
-    top: 5px;
-    right: 5px;
-    display: none;
-    cursor: pointer;
+.HomePart{
+    color: #525252;
 }

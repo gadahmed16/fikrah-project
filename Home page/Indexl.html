@@ -74,7 +74,7 @@
                     </a>
                 </li>
                 <li class="TheMainLiOne">
-                    <a href="" class="TheMainA">
+                    <a href="../Massage Page/Indexl.html" class="TheMainA">
                         <i class="TheNavIcon fa-solid fa-comments"></i>
                         <h6>Messages</h6>
                     </a>
@@ -86,7 +86,7 @@
                     </a>
                 </li>
                 <li class="TheMainLiOne TheProFilePart">
-                    <a href="" class="TheMainA">
+                    <a href="../MyProfile Page/Indexl.html" class="TheMainA">
                         <img class="UnkowImg" src="../IntroDuction video's and img/Unknow.jpg" alt="">
                         <h6 class="TheIconText">Me <i class=" fa-solid fa-sort-down ThePRoFileIcon"></i></h6>
                     </a>
@@ -99,9 +99,13 @@
                 </li>
             </ul>
             <div class="TheHAmpMenu">
-                <label for="check">
-                    <i class="fa-solid fa-bars EditTheOpen"></i>
-                </label>
+                <button class="mesdnu HampMenuOnly" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+                    <svg width="100" height="100" viewBox="0 0 100 100">
+                      <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                      <path class="line line2" d="M 20,50 H 80" />
+                      <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                  </button>
             </div>
         </nav>
         <!-- EL Menu El Btzhr Lma Edos 3ala El Icon -->
@@ -110,16 +114,13 @@
                 <a href="">
                     <img class="NavBrandImg" src="../IntroDuction video's and img/The Nav Icon.svg" alt="">
                 </a>
-                <div class="TheHampMenu2 CloseTheHamp">
-                    <i class="fa-solid fa-x"></i>
-                </div>
             </div>
             <ul class="TheSecondul">
                 <li class=" HomeParTSmallScrean"><a href="#" class="TheAOfLiInSmallScreanHampMenu">Home</a></li>
                 <li class=" NotifcationPart"><a href="#" class="TheAOfLiInSmallScreanHampMenu">Notifications</a></li>
-                <li class=" MAssgesParTSmallSCrean"><a href="#" class="TheAOfLiInSmallScreanHampMenu">Massages</a></li>
+                <li class=" MAssgesParTSmallSCrean"><a href="../Massage Page/Indexl.html" class="TheAOfLiInSmallScreanHampMenu">Massages</a></li>
                 <li class=" FrindesInSmallScrean"><a href="#" class="TheAOfLiInSmallScreanHampMenu">Frindes</a></li>
-                <li class=" MyProfile"><a href="#" class="TheAOfLiInSmallScreanHampMenu">My Profile</a></li>
+                <li class=" MyProfile"><a href="../MyProfile Page/Indexl.html" class="TheAOfLiInSmallScreanHampMenu">My Profile</a></li>
                 <li class=" MyProfile"><a href="#" class="TheAOfLiInSmallScreanHampMenu">Settings</a></li>
                 <li class="TheInputScrean">
                     <div class="inputSearchSmallScrean">
@@ -141,13 +142,17 @@
                 <i class="OnClickIconBottomNavBar fa-solid fa-house"></i>
             </div>
             <div class="MassgesPart">
-                <i class="OnClickIconBottomNavBar fa-solid fa-message"></i>
+                <a href="../Massage Page/Indexl.html" style="color: #625959;">
+                    <i class="OnClickIconBottomNavBar fa-solid fa-message"></i>
+                </a>
             </div>
-            <div class="AddNewPostPart activeIconNavBar btn btn-outline-success">
+            <div class="AddNewPostPart activeIconNavBar btn btn-outline-success CreatePostBTn">
                 <i class=" fa-solid fa-plus"></i>
             </div>
             <div class="ProFilePart">
-                <i class="OnClickIconBottomNavBar fa-solid fa-user"></i>
+                <a class="ProFilePart" href="../MyProfile Page/Indexl.html">
+                    <i class="OnClickIconBottomNavBar fa-solid fa-user"></i>
+                </a>
             </div>
             <div class="NotificationsPart">
                 <i class="OnClickIconBottomNavBar fa-solid fa-bell"></i>
@@ -223,262 +228,32 @@
         </div>
         <div class="TheCenter">
             <div class="WritePostPart">
-                <p class="CreatePostP">
+                <p class="CreatePostP CreatePostBTn">
                     <i class="fa-solid fa-pen-to-square"></i>
                     Create a post ...
                 </p>
                 <hr class="TheHrWritePost">
                 <div class="IconWriteParts">
-                    <div class="TheIELEdiv">
+                    <div class="TheIELEdiv CreatePostBTn">
                         <i class="fa-solid fa-camera TheiEle"></i>
                         <b class="TheNameOfIcon">Photo</b>
                     </div>
-                    <div class="TheIELEdiv">
+                    <div class="TheIELEdiv CreatePostBTn">
                         <i class="fa-solid fa-video TheiEle"></i>
                         <b class="TheNameOfIcon">Video</b>
                     </div>
-                    <div class="TheIELEdiv">
+                    <div class="TheIELEdiv CreatePostBTn">
                         <i class="fa-solid fa-calendar-days TheiEle"></i>
                         <b class="TheNameOfIcon">Events</b>
                     </div>
-                    <div class="TheIELEdiv">
+                    <div class="TheIELEdiv CreatePostBTn">
                         <i class="fa-solid fa-feather-pointed TheiEle"></i>
                         <b class="TheNameOfIcon">article</b>
                     </div>
                 </div>
             </div>
 
-
-
-
-
-
-
-
-
-
-
-
-            <div class="PostsPartParent">
-
-                <!-- <div class="PostsPart">
-                    <div class="HeaderOfpost">
-                        <div class="FirstParTInHeader">
-                            <div class="ImgPartInPost">
-                                <img src="../IntroDuction video's and img/Unknow.jpg" class="TheImgOFpost" alt="">
-                            </div>
-                            <div class="TextAndName">
-                                <b class="TheUserInfo UserNamePost">Neom</b>
-                                <b class="TheUserInfo JopName">Ui/Ux Desginer</b>
-                                <b class="TheUserInfo Time">1h <i class="fa-solid fa-earth-americas"></i></b>
-                            </div>
-                        </div>
-                        <div class="TheSecondParentHeader">
-                            <button class="btn btn-outline-primary">Follow</button>
-                        </div>
-                    </div>
-
-                    <div class="DisOfPost">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae optio adipisci officiis
-                            voluptatibus, earum autem dicta dolore magni hic nam voluptatem veniam quisquam enim beatae
-                            voluptatum accusamus animi, atque in?</p>
-                    </div>
-                    <div class="StataicsOfPos">
-                        <p>
-                            <i class="fa-solid fa-thumbs-up"></i>
-                            150
-                            .
-                            14 Comments
-                        </p>
-                    </div>
-                    <hr>
-                    <div class="TheFooterOFPost">
-                        <div class="TheIELEdiv">
-                            <i class="fa-solid fa-thumbs-up"></i>
-                            <b class="TheNameOfIcon">Like</b>
-                        </div>
-                        <div class="TheIELEdiv">
-                            <i class="fa-solid fa-message"></i>
-                            <b class="TheNameOfIcon">Comment</b>
-                        </div>
-                        <div class="TheIELEdiv">
-                            <i class="fa-solid fa-share-from-square"></i> 
-                            <b class="TheNameOfIcon">Share</b>
-                        </div>
-                        <div class="TheIELEdiv">
-                            <i class="fa-solid fa-paper-plane"></i> 
-                            <b class="TheNameOfIcon">Send</b>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="PostsPart">
-                    <div class="HeaderOfpost">
-                        <div class="FirstParTInHeader">
-                            <div class="ImgPartInPost">
-                                <img src="../IntroDuction video's and img/Unknow.jpg" class="TheImgOFpost" alt="">
-                            </div>
-                            <div class="TextAndName">
-                                <b class="TheUserInfo UserNamePost">Neom</b>
-                                <b class="TheUserInfo JopName">Ui/Ux Desginer</b>
-                                <b class="TheUserInfo Time">1h <i class="fa-solid fa-earth-americas"></i></b>
-                            </div>
-                        </div>
-                        <div class="TheSecondParentHeader">
-                            <button class="btn btn-outline-primary">Follow</button>
-                        </div>
-                    </div>
-
-                    <div class="DisOfPost">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur
-                        </p>
-                        <div class="ImgContinerOfPost">
-                            <img src="../IntroDuction video's and img/NeomImg.jpg" class="TheImgEleInPost" alt="">
-                        </div>
-                    </div>
-                    <div class="StataicsOfPos">
-                        <p>
-                            <i class="fa-solid fa-thumbs-up"></i>
-                            150
-                            .
-                            14 Comments
-                        </p>
-                    </div>
-                    <hr>
-                    <div class="TheFooterOFPost">
-                        <div class="TheIELEdiv">
-                            <i class="fa-solid fa-thumbs-up"></i>
-                            <b class="TheNameOfIcon">Like</b>
-                        </div>
-                        <div class="TheIELEdiv">
-                            <i class="fa-solid fa-message"></i>
-                            <b class="TheNameOfIcon">Comment</b>
-                        </div>
-                        <div class="TheIELEdiv">
-                            <i class="fa-solid fa-share-from-square"></i> <b class="TheNameOfIcon">Share</b>
-                        </div>
-                        <div class="TheIELEdiv">
-                            <i class="fa-solid fa-paper-plane"></i> <b class="TheNameOfIcon">Send</b>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="PostsPart">
-                    <div class="HeaderOfpost">
-                        <div class="FirstParTInHeader">
-                            <div class="ImgPartInPost">
-                                <img src="../IntroDuction video's and img/Unknow.jpg" class="TheImgOFpost" alt="">
-                            </div>
-                            <div class="TextAndName">
-                                <b class="TheUserInfo UserNamePost">Neom</b>
-                                <b class="TheUserInfo JopName">Ui/Ux Desginer</b>
-                                <b class="TheUserInfo Time">1h <i class="fa-solid fa-earth-americas"></i></b>
-                            </div>
-                        </div>
-                        <div class="TheSecondParentHeader">
-                            <button class="btn btn-outline-primary">Follow</button>
-                        </div>
-                    </div>
-
-                    <div class="DisOfPost">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae optio adipisci officiis
-                            voluptatibus, earum autem dicta dolore magni hic nam voluptatem veniam quisquam enim beatae
-                            voluptatum accusamus animi, atque in?</p>
-                    </div>
-                    <div class="StataicsOfPos">
-                        <p>
-                            <i class="fa-solid fa-thumbs-up"></i>
-                            150
-                            .
-                            14 Comments
-                        </p>
-                    </div>
-                    <hr>
-                    <div class="TheFooterOFPost">
-                        <div class="TheIELEdiv">
-                            <i class="fa-solid fa-thumbs-up"></i>
-                            <b class="TheNameOfIcon">Like</b>
-                        </div>
-                        <div class="TheIELEdiv">
-                            <i class="fa-solid fa-message"></i>
-                            <b class="TheNameOfIcon">Comment</b>
-                        </div>
-                        <div class="TheIELEdiv">
-                            <i class="fa-solid fa-share-from-square"></i> <b class="TheNameOfIcon">Share</b>
-                        </div>
-                        <div class="TheIELEdiv">
-                            <i class="fa-solid fa-paper-plane"></i> <b class="TheNameOfIcon">Send</b>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-
-                <div class="PostsPart">
-                    <div class="HeaderOfpost">
-                        <div class="FirstParTInHeader">
-                            <div class="ImgPartInPost">
-                                <img src="../IntroDuction video's and img/Unknow.jpg" class="TheImgOFpost" alt="">
-                            </div>
-                            <div class="TextAndName">
-                                <b class="TheUserInfo UserNamePost">Neom</b>
-                                <b class="TheUserInfo JopName">Ui/Ux Desginer</b>
-                                <b class="TheUserInfo Time">1h <i class="fa-solid fa-earth-americas"></i></b>
-                            </div>
-                        </div>
-                        <div class="TheSecondParentHeader">
-                            <button class="btn btn-outline-primary">Follow</button>
-                        </div>
-                    </div>
-
-                    <div class="DisOfPost">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae optio adipisci officiis
-                            voluptatibus, earum autem dicta dolore magni hic nam voluptatem veniam quisquam enim beatae
-                            voluptatum accusamus animi, atque in?</p>
-                    </div>
-                    <div class="StataicsOfPos">
-                        <p>
-                            <i class="fa-solid fa-thumbs-up"></i>
-                            150
-                            .
-                            14 Comments
-                        </p>
-                    </div>
-                    <hr>
-                    <div class="TheFooterOFPost">
-                        <div class="TheIELEdiv">
-                            <i class="fa-solid fa-thumbs-up"></i>
-                            <b class="TheNameOfIcon">Like</b>
-                        </div>
-                        <div class="TheIELEdiv">
-                            <i class="fa-solid fa-message"></i>
-                            <b class="TheNameOfIcon">Comment</b>
-                        </div>
-                        <div class="TheIELEdiv">
-                            <i class="fa-solid fa-share-from-square"></i> <b class="TheNameOfIcon">Share</b>
-                        </div>
-                        <div class="TheIELEdiv">
-                            <i class="fa-solid fa-paper-plane"></i> <b class="TheNameOfIcon">Send</b>
-                        </div>
-                    </div>
-                </div> -->
-
-            </div>
-
-
-
-
+            <div class="PostsPartParent">   </div>
 
         </div>
         <div class="TheRight">
@@ -550,61 +325,115 @@
                 <div class="NewsPart">
                     <div class="NewBody">
                         <h3 class="TheHeaderOfNew">1 . It's an empty message </h3>
-                        <p class="TheDisOfNew">It's an empty message  </p>
+                        <p class="TheDisOfNew">It's an empty message </p>
                     </div>
                     <div class="NewBody">
                         <h3 class="TheHeaderOfNew">2 . It's an empty message </h3>
-                        <p class="TheDisOfNew">It's an empty message  </p>
+                        <p class="TheDisOfNew">It's an empty message </p>
                     </div>
                     <div class="NewBody">
                         <h3 class="TheHeaderOfNew">3 . It's an empty message </h3>
-                        <p class="TheDisOfNew">It's an empty message  </p>
+                        <p class="TheDisOfNew">It's an empty message </p>
                     </div>
                     <div class="NewBody">
                         <h3 class="TheHeaderOfNew">4 . It's an empty message </h3>
-                        <p class="TheDisOfNew">It's an empty message  </p>
+                        <p class="TheDisOfNew">It's an empty message </p>
                     </div>
                 </div>
                 <div class="TheViewAllCommyA">
-                    <b class="TheViewAllCommyP">Show more investment offers <i class="fa-solid fa-arrow-right-long"></i></b>
+                    <b class="TheViewAllCommyP">Show more investment offers <i
+                            class="fa-solid fa-arrow-right-long"></i></b>
                 </div>
             </div>
         </div>
         <div class="CreatePostPart">
             <div class="CreatePostForm">
-                <div class="HeaderOfCreatePostPArt">
-                    <div class="TheListEleOfFunctions">
-                        <b>
-                            <i class="fa-solid fa-pen-clip"></i>
-                            Write Post
-                        </b>
-                    </div>
-                    <hr class="TheHrCreateEle">
-                    <div class="TheListEleOfFunctions">
-                        <b>
-                            <i class="fa-solid fa-camera-retro"></i>
-                            Add Photo/Video
-                        </b>
-                    </div>
-                    <hr class="TheHrCreateEle">
-                    <div class="TheListEleOfFunctions">
-                        <b>
-                            <i class="fa-solid fa-camera-retro"></i>
-                            Add Photo/Video
-                        </b>
-                    </div>
-                    <hr class="TheHrCreateEle">
-                    <div class="TheListEleOfFunctions">
-                        <b>
-                            More
-                            <i class="fa-solid fa-ellipsis"></i>
-                        </b>
+                <div class="HeaderOfCreateAPost">
+                    <b>Create Post</b>
+                    <div class="TheCloseIcon">
+                        <i class="fa-solid fa-circle-xmark"></i>
                     </div>
                 </div>
-                <div class="WriteTextCreateEle">
-                    <img class="TheImgOFpost" src="../IntroDuction video's and img/Unknow.jpg" alt="Profile Img">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                <hr class="TheHrPostCreate">
+                <div class="ProfIlePart">
+                    <div class="FirstParTInHeader">
+                        <div class="ImgPartInPost">
+                            <img src="../IntroDuction video's and img/Unknow.jpg" class="TheImgOFpost" alt="">
+                        </div>
+                        <div class="TextAndName">
+                            <b class="TheUserInfo UserNamePost UserNamePostEdit">UserName</b>
+                            <select class="form-select " aria-label="Default select example">
+                                <option class="TheVispiltyRule" value="0" selected><i
+                                        class="fa-solid fa-earth-asia"></i> Puplic</option>
+                                <option class="TheVispiltyRule" value="1"><i class="fa-solid fa-user-group"></i> friends
+                                </option>
+                                <option class="TheVispiltyRule" value="2"><i class="fa-solid fa-lock"></i> private
+                                </option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
+                <hr class="TheHrPostCreate">
+                <div class="TheWriteDisOfPostPart">
+                    <textarea placeholder="Write ..." name="" class="WritePostPartInput" id="" cols="30" rows="7">
+                    </textarea>
+                    <p class="TheErrorsOfPost">
+                        <i class="fa-solid fa-circle-info"></i>
+                        The Post discretion is Empty
+                    </p>
+                    <div class="ProPrtisOfText">
+                        <div class="ChangeColorBTN">
+                            <p> color</p>
+                        </div>
+                        <div class="ChangeColorBTN AddImg">
+                            <p><i class="fa-solid fa-images"></i> Image</p>
+                        </div>
+                        <div class="ChangeColorBTN AddImg">
+                            <p><i class="fa-solid fa-photo-film"></i> Video</p>
+                        </div>
+                    </div>
+                    <div class="TheERROROfUpload">
+                        <b class="TheERrorUploadElement">
+                            <i class="fa-solid fa-circle-info"></i>
+                            The wrong file was uploaded
+                        </b>
+                    </div>
+                    <div class="TheImageScrean">
+                        <img class="TheImagesrc" src="" alt="">
+                        <video class="TheVideoOutScreanView" controls src=""></video>
+                        <div class="XMARK">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="TheDragArea">
+                        <input type="file" class="TheRealInputFIle">
+                        <div class="UnDraged">
+                            <div class="EditOfImage">
+                                <img class="EditFaImage" src="IMGS/images-solid.svg" alt="">
+                            </div>
+                            <p class="TheTextOfDragArea">
+                                Drag & Drop
+                                <br>
+                                or <span class="BrowseBTN">browse</span>
+                                <br>
+                                <small class="TheSmallTextDragArea">Spport JPG , PNG , SVG</small>
+                            </p>
+                            <div class="TheCloseIconInDargImage">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="alert alert-secondary" role="alert">
+                        <i class="fa-solid fa-circle-info EditCir"></i>
+                        <span class="ChangapleText">
+                            This post will be shown to all people, including your friends and everyone who is interested
+                            in your post
+                        </span>
+                    </div>
+                </div>
+                <button class="PostBTn btn btn-outline-primary">Post</button>
             </div>
         </div>
     </main>
