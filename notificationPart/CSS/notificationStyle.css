@@ -1043,6 +1043,7 @@ hr {
     gap: 10px;
     align-items: center;
 }
+
 /* The B of Write Post  */
 @media (max-width:920px) {
     .TheNameOfIcon {
@@ -1076,12 +1077,15 @@ hr {
     .TheRight {
         grid-column: 2/3;
         grid-row: 1/2;
-    } 
+    }
+
     .AddFeedPart {
         display: block;
     }
 }
+
 @media (max-width:682px) {
+
     .TheLeftPartContiner,
     .TheNameOfIcon,
     .TheRight {
@@ -1104,6 +1108,7 @@ hr {
         grid-row: 1/2;
     }
 }
+
 /* The Post Edit */
 .PostsPart {
     margin-top: 40px;
@@ -1290,19 +1295,23 @@ hr {
     /* text-align: center; */
     display: none;
 }
+
 @keyframes TheFormOfPostShowIn {
-    0%{
+    0% {
         opacity: 0;
     }
 }
+
 @keyframes TheFormOfPostShowOut {
-    0%{
+    0% {
         opacity: 1;
     }
-    100%{
+
+    100% {
         opacity: 0;
     }
 }
+
 .CreatePostForm {
     position: relative;
     top: 5px;
@@ -1370,41 +1379,49 @@ hr {
     user-select: none;
     cursor: pointer;
 }
-.ProPrtisOfText{
+
+.ProPrtisOfText {
     display: flex;
     gap: 6px;
 }
+
 .ChangeColorBTN p {
     margin: 0px;
 }
-.PostBTn{
+
+.PostBTn {
     width: 100%;
     margin-top: 0px;
 }
-.AddImg{
+
+.AddImg {
     background-image: none;
     transition: all .2s linear;
     color: #212529;
     align-items: center;
 }
-.AddImg:hover{
+
+.AddImg:hover {
     background-color: #212529;
     font-weight: 100;
     color: white;
 }
-.alert-secondary{
+
+.alert-secondary {
     margin-bottom: 10x;
     display: flex;
     /* align-items: center; */
     gap: 15px;
 }
-.AddImg p{
+
+.AddImg p {
     background-image: none;
     display: flex;
     gap: 7px;
     align-items: center;
 }
-.TheErrorsOfPost{
+
+.TheErrorsOfPost {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -1412,30 +1429,35 @@ hr {
     color: red;
     display: none;
 }
-.EditCir{
+
+.EditCir {
     position: relative;
     top: 2px;
 }
-.TheTextDis{
+
+.TheTextDis {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5,auto);
-    word-break:break-all;    
+    grid-template-rows: repeat(5, auto);
+    word-break: break-all;
 }
-.dragImagePart{
+
+.dragImagePart {
     margin: 20px 0px;
     font-size: 20px;
     padding: 50px 0px;
-    border: 3px  dotted #0674db;
+    border: 3px dotted #0674db;
     text-align: center;
-    user-select: none   ;
+    user-select: none;
 }
-.EditOfImage{
+
+.EditOfImage {
     color: #0674db;
     font-size: 35px;
     margin-bottom: 7px;
 }
-.UnDraged{
+
+.UnDraged {
     user-select: none;
     text-align: center;
     border: 4px dotted black;
@@ -1444,43 +1466,53 @@ hr {
     font-weight: bold;
     margin: 20px 0px;
 }
-.EditFaImage{
+
+.EditFaImage {
     width: 50px;
 }
-small{
+
+small {
     font-size: 10px;
 }
-.BrowseBTN{
+
+.BrowseBTN {
     color: #0674db;
     text-decoration: underline;
     cursor: pointer;
 }
-.BrowseBTN.hover{
+
+.BrowseBTN.hover {
     color: #0084ff;
 }
-.TheRealInputFIle{
+
+.TheRealInputFIle {
     display: none;
 }
-.TheImageScrean{
+
+.TheImageScrean {
     margin-top: 20px;
     position: relative;
     border-radius: 10px;
 }
-.TheImagesrc{
+
+.TheImagesrc {
     width: 100%;
 }
-.TheDragArea{
+
+.TheDragArea {
     display: none;
     position: relative;
 }
-.TheCloseIconInDargImage{
+
+.TheCloseIconInDargImage {
     position: absolute;
     top: 10px;
     cursor: pointer;
     right: 10px;
 }
-.TheERrorUploadElement{
-        display: flex;
+
+.TheERrorUploadElement {
+    display: flex;
     align-items: center;
     gap: 10px;
     font-weight: bold;
@@ -1488,85 +1520,102 @@ small{
     margin-top: 10px;
     display: none;
 }
-.TheVideoOutScreanView{
+
+.TheVideoOutScreanView {
     width: 100%;
     display: none;
 }
-.fa-earth-americas{
+
+.fa-earth-americas {
     margin-left: 3px;
 }
+
 .mesdnu {
     background-color: transparent;
     border: none;
     cursor: pointer;
     display: flex;
     padding: 0;
-  }
-  .line {
+}
+
+.line {
     fill: none;
     stroke: #f58634;
     stroke-width: 6;
     transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .line1 {
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
     stroke-dasharray: 60 207;
     stroke-width: 6;
-  }
-  .line2 {
+}
+
+.line2 {
     stroke-dasharray: 60 60;
     stroke-width: 6;
-  }
-  .line3 {
+}
+
+.line3 {
     stroke-dasharray: 60 207;
     stroke-width: 6;
-  }
-  .opened .line1 {
+}
+
+.opened .line1 {
     stroke-dasharray: 90 207;
     stroke-dashoffset: -134;
     stroke-width: 6;
-  }
-  .opened .line2 {
+}
+
+.opened .line2 {
     stroke-dasharray: 1 60;
     stroke-dashoffset: -30;
     stroke-width: 6;
-  }
-  .opened .line3 {
+}
+
+.opened .line3 {
     stroke-dasharray: 90 207;
     stroke-dashoffset: -134;
     stroke-width: 6;
-  }
-.HampMenuOnly{
+}
+
+.HampMenuOnly {
     width: 50px;
     margin-right: 10px;
 }
-nav{
+
+nav {
     height: 65px;
 }
-.ProFilePart{
+
+.ProFilePart {
     color: #625959;
     transition: .2s linear;
 }
-.ProFilePart.hover{
+
+.ProFilePart.hover {
     color: black;
 }
-.TheRightPartInSmallScreanHamprgerMenu{
-}
+
+.TheRightPartInSmallScreanHamprgerMenu {}
+
 @keyframes TheSideNavIn {
-    0%{
+    0% {
         opacity: 0;
         transition: all .2s linear;
         transform: translateX(300px);
     }
 }
+
 @keyframes TheSideNavOut {
-    100%{
+    100% {
         opacity: 0;
         transition: all .2s linear;
         transform: translateX(300px);
     }
 }
-.XMARK{
+
+.XMARK {
     position: absolute;
     font-size: 20px;
     background-color: white;
@@ -1577,8 +1626,244 @@ nav{
     display: none;
     cursor: pointer;
 }
-.ResetTheTextColor{
-    background-image: none;
-    /* background-color: #212529; */
+
+a,
+h6 {
+    border: none;
+}
+.HomePageIconNavBar{
+    color: #808080;
+    transition: all .2s linear;
+}
+.HomePageIconNavBar:hover{
+    color: black;
+}
+.CHCOLOR{
+    color: black;
+}
+/* The Real Work */
+main{
+    display: grid;
+    grid-template-columns: 0.37fr auto;
+    grid-template-rows: 750px;
+    padding: 0px;
+    margin: 5px;
+    margin-top: 10px;
+}
+.CoulmnOne {
+
+    /* border: 1px solid black; */
+    background-color: white;
+    box-shadow: 0px 0px 4px black;
+}
+.TheMassagesH1{
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.TheInputPart{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    margin: 0px 30px;
+    margin-left: 15px;
+    padding: 7px;
+    margin-bottom: 40px;
+    background-color: #e7e9f3;
+}
+.TheMagnifyIcon{
+    background-color: #e7e9f3;
+    font-size: 20px;
+}
+.TheInputPart input{
+    border: none;
+    width: 100%;
+    background-color: #e7e9f3;
+}
+.TheInputPart input:focus{
+    outline: none;
+    border: none;
+}
+.Archives{
+    margin: 30px 10px;
+    display: flex;
+    gap: 10px;
+    font-weight: bold;
+    align-items: center;
+}
+.TheArchivesNumber{
+    color: rgba(0, 0, 0, 0.411);
+}
+.TheHREF{
+    margin: 5px 0px;
+}
+.ProfIleAdd{
+    /* background-color: #198754; */
+    padding-top: 10px;
+    /* display: flex; */
+    align-items: center;
+    padding-left: 0px;
+    border-left: 10px solid transparent;
+    transition: all .2s linear;
+    padding-left: 10px;
+}
+.ProfIleAdd:hover{
+    background-color: rgba(0, 0, 0, 0.267);
+    cursor: pointer;
+}
+.TheImgOFpost{
+    position: relative;
+    bottom: 6px;
+}
+/* Coulmn two */
+.CoulmnTwo{
+    background-color: white;
+    box-shadow: 0px 0px 4px black;
+    position: relative;
+}
+.TheUserImage{
+    width: 60px;
+    border-radius: 50%;
+}
+.TheUserNamema{
+    font-size: 24px;
+}
+.HeaderOfMassage{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 20px;
+}
+.EditTheIconsone{
+    transition: all .2s linear;
+}
+.EditTheIconsone:hover{
+    font-size: 22px;
+    color: black;
+    cursor: pointer;
+}
+.Editone{
+    color: black;
+}
+.TheICons{
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+}
+.TheImageAnduser{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.TheInputMassage{
+    border: 1px solid black;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+.TheIconsTwo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.InputParts{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+}
+.InputParts input{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.InputParts input:focus{
+    /* width: 100%; */
+    /* height: 100%; */
+    border: none;
+    outline-style: none;
+}
+.fa-microphone{
+    font-size: 20px;
+}
+.TheDivIcon{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    align-items: center;
+}
+.Edits{
+    font-size: 20px;
+}
+.TheMassageBodyParnt{
+    position: absolute;
+    bottom: 50.500px;
+    width: 100%;
+}
+.TheMassageBody{
+    padding: 5px;
+    background-color: slategray;
     color: white;
+    font-size: 20px;
+    display: inline-block;
+    float: right;
+    margin-right: 6px;
+}
+.TheMassegeELe{
+    text-align: start;
+    padding-right: 10px;
+}
+.TheMassageBodyParnt{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 2fr 1fr;
+}
+.TheMassageBody{
+    grid-column: 2/3;
+}
+.TheEdit{
+    visibility: hidden;
+}
+.HeaderOfMain{
+    /* border: 1px solid black; */
+}
+.HeaderOfMain{
+    /* border: 1px solid black; */
+    font-size: 25px;
+}
+main{
+    padding: 10px;
+    display: block;
+}
+.CoustemHr{
+    margin-top: 4px;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    width: 200px;
+    height: 5px;
+    background-color: black;
+    opacity: 1;
+}
+.ProfIleAdd {
+    padding: 0px;
+    padding-top: 15px;
+    border-color: #BFD641;
+    padding-left: 5px;
+    border-bottom: 1px solid black;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.HeaderOfpost{
+    padding-right: 30px;
+    display: flex;
+    /* justify-content: space-between; */
+    /* gap: 100px; */
+}
+.TheFlexPart{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }

@@ -3,13 +3,8 @@
     // The Header
     let TheHeader = document.getElementsByTagName("header")[0];
     let TheBottomNavBar = document.getElementsByClassName("BottomNavBar")[0];
-    let TheLeftPart = document.getElementsByClassName("TheLeftPartContiner")[0];
-    let TheCenterPart = document.getElementsByClassName("TheCenter")[0];
-    let TheRightPart = document.getElementsByClassName("TheRight")[0];
     setTimeout(() => {
         TheHeader.style = " animation: TheHeaderEdit .4s linear  ; opacity:1;";
-
-
     }, 0);
 
     // T25yr El Bottom Nav Bar 34an bysl m4akl lma y7sal El animation Bta3 El NavBar Top
@@ -18,7 +13,7 @@
         TheBottomNavBar.style.visibility = "visible"
         TheBottomNavBar.style.transition = "all .3s linear"
         TheBottomNavBar.style.animation = "TheBottomNavAni .5s linear"
-    }, 3000);
+    },500);
     // TheSeachBarActive 
     let TheSearchBarActiveComponts = [...document.getElementsByClassName("ActiveOnClick")];
     let ExitMark = document.getElementsByClassName("ssss")[0];
@@ -149,7 +144,7 @@ window.localStorage.setItem("ThePassword",123)
 GoEditBTN.addEventListener("click",() => {
     if(TheInputPasswordBTN.value === window.localStorage.getItem("ThePassword")){
         console.log(TheInputPasswordBTN.value);
-        document.location.href = "../TheProfileEditPage/TheProFilePageEdit.html"
+        document.location.href = "TheProfileEditPage/TheProFilePageEdit.html"
         ErrorB.style.display = "none"
         TheInputPasswordBTN.value = "";
     }else{

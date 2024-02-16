@@ -1,5 +1,22 @@
 // The NavBar And Landing Page 
 {
+    if(!window.localStorage.getItem('TheUserAllInfo')){
+        let theAllInfoObject = {
+            UserName : {
+                UserNameInput : "UserName",
+                FirstName : "user",
+                LastName : "name",
+            },
+            OrganizationName : "Null",
+            Location : "Null",
+            Email : "Null",
+            PhoneNumber : "Null",
+            Birthday : "null",
+            TheImageProFileSrc: "null"
+        }
+        window.localStorage.setItem("TheUserAllInfo",JSON.stringify(theAllInfoObject))
+    }
+
     let TheLogoImg = document.getElementsByClassName("IntroImg")[0];
     let TheH1Logo = document.getElementsByClassName("TheLogoNameInIntroPage")[0];
     let TheDisLogo = document.getElementsByClassName("TheLogoDisCratiptonInIntroPage")[0];
@@ -135,7 +152,8 @@ for (let i = 0; i < TheIeleInPartenWritePost.length; i++) {
 let ThePlaceOfPosts = document.getElementsByClassName("PostsPartParent")[0];
 let ButtonOfCreatePost = [...document.getElementsByClassName("CreatePostBTn")];
 let theVideoPostInDivOfPost;
-function ThePostBody(TheDisOfPost,TheUrlOfFIle,IsImage) {
+let user = JSON.parse(window.localStorage.getItem('TheUserAllInfo'))
+function ThePostBody(TheDisOfPost,TheUrlOfFIle,IsImage,TheTextColor) {
     // Big Post ParT{
     //      1 - The Header - Of Post
     //         1.1 - FirstPart In Header
@@ -175,11 +193,14 @@ function ThePostBody(TheDisOfPost,TheUrlOfFIle,IsImage) {
     // User Name
     let UserNamePost = document.createElement("b");
     UserNamePost.classList.add("UserNamePost", "TheUserInfo");
-    UserNamePost.textContent = "User Name"
+    UserNamePost.classList.add("TheUserNameLoop")
+
+    UserNamePost.textContent = user.UserName.UserNameInput;
     // Jop Name
     let JopName = document.createElement("b");
     JopName.classList.add("JopName", "TheUserInfo");
-    JopName.textContent = "The Jop Name";
+    JopName.textContent = user.OrganizationName;
+    JopName.classList.add("TheJopLoop");
     //  Time
     let TimeOfPost = document.createElement("b");
     TimeOfPost.classList.add("Time", "TheUserInfo");
@@ -222,6 +243,8 @@ function ThePostBody(TheDisOfPost,TheUrlOfFIle,IsImage) {
     let TheDisPEleInDisPart = document.createElement("p");
     TheDisPEleInDisPart.classList.add("TheTextDis")
     TheDisPEleInDisPart.textContent = TheDisOfPost;
+    TheDisPEleInDisPart.style.color = TheTextColor;
+
     // 2.2 - TheImg Element Div
     let TheImgPartDivOfThePost = document.createElement("div");
     TheImgPartDivOfThePost.classList.add("ImgContinerOfPost");
@@ -290,6 +313,7 @@ function ThePostBody(TheDisOfPost,TheUrlOfFIle,IsImage) {
     TheBigParentBodyPost.appendChild(TheFooterOfThePost);
     ThePlaceOfPosts.appendChild(TheBigParentBodyPost);
 }
+window.localStorage.setItem("TheTextColor","black")
 let TheFormWritePost = document.getElementsByClassName("CreatePostPart")[0];
 let TextAreaPart = document.getElementsByTagName("textarea")[0];
 // When I Click To Create Post
@@ -314,7 +338,14 @@ TextAreaPart.innerHTML = "";
 let TheChangeColorBTN = document.getElementsByClassName("ChangeColorBTN")[0];
 TheChangeColorBTN.addEventListener("click", () => {
     let TheRandOmNumber = Math.floor(Math.random() * 350);
-    TextAreaPart.style.color = `hsl(${TheRandOmNumber},100%,50%)`;
+    let TheColorOfText = `hsl(${TheRandOmNumber},100%,50%)`;
+    window.localStorage.setItem("TheTextColor",TheColorOfText)
+    TextAreaPart.style.color = TheColorOfText;
+})
+let TheBackColorBlack = document.getElementsByClassName("ResetTheTextColor")[0];
+TheBackColorBlack.addEventListener("click",() => {
+    window.localStorage.setItem("TheTextColor","black")
+    TextAreaPart.style.color = "black"
 })
 let TheBostBTn = document.getElementsByClassName("PostBTn")[0];
 let TheErrorEmptyDisOfPost = document.getElementsByClassName("TheErrorsOfPost")[0];
@@ -361,10 +392,10 @@ function AddIMage(){
             TheVideoViewScrean.style.display = "none"
             TheERrorUploadElement.style.display = "none"
             Xmark.style.display = "block"
-            console.log("You Are Choose Image -------------------")
+            // console.log("You Are Choose Image -------------------")
         }else{
             TheERrorUploadElement.style.display = "flex"
-            console.log("You Are Dont Choose Image -------------------")
+            // console.log("You Are Dont Choose Image -------------------")
         }
     }else{
         if(TheAllInfoOfImage === "video/mp4"){
@@ -376,10 +407,10 @@ function AddIMage(){
             TheVideoViewScrean.style.border = "1px solid black"
             TheVideoViewScrean.style.borderRadius = "5px"
             TheVideoViewScrean.src = TheURLOfTheImage;
-            console.log("You Are Choose Video -------------------")
+            // console.log("You Are Choose Video -------------------")
         }else{
             TheERrorUploadElement.style.display = "flex"
-            console.log("You Are Dont Choose Video -------------------")
+            // console.log("You Are Dont Choose Video -------------------")
         }
     }
 }
@@ -426,12 +457,12 @@ TheBostBTn.addEventListener("click", () => {
         TheErrorEmptyDisOfPost.style.display = "block"
     } else {
         if(TheAllInfoOfImage === "video/mp4"){
-            ThePostBody(TextAreaPart.value,TheURLOfTheImage,false);
+            ThePostBody(TextAreaPart.value,TheURLOfTheImage,false,window.localStorage.getItem("TheTextColor"));
             
         }else if (TheAllInfoOfImage === "image/png" || TheAllInfoOfImage === "image/jpeg" || TheAllInfoOfImage === "image/svg+xml"){
-            ThePostBody(TextAreaPart.value,TheURLOfTheImage,true);
+            ThePostBody(TextAreaPart.value,TheURLOfTheImage,true,window.localStorage.getItem("TheTextColor"));
         }else{
-            ThePostBody(TextAreaPart.value,TheURLOfTheImage,null);
+            ThePostBody(TextAreaPart.value,TheURLOfTheImage,null,window.localStorage.getItem("TheTextColor"));
         }
         CloseTheFormPart()
         TextAreaPart.value = "";
@@ -454,6 +485,17 @@ TheFollowBTn.forEach(ele => {
         }
     })
 })
+window.onload = () => {
+    let TheUserNameLoop = [...document.getElementsByClassName("TheUserNameLoop")];
+    let TheJopNameLoop = [...document.getElementsByClassName("TheJopLoop")];
+    TheUserNameLoop.forEach((ele) => {
+        ele.textContent = user.UserName.UserNameInput;
+    })
+    TheJopNameLoop.forEach((ele) => {
+        ele.textContent = user.OrganizationName;
+    })
+}
 window.addEventListener("resize", () => {
     location.reload();
 });
+// window.localStorage.clear();

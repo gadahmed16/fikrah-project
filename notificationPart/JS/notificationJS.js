@@ -4,12 +4,8 @@
     // The Header
     let TheHeader = document.getElementsByTagName("header")[0];
     let TheBottomNavBar = document.getElementsByClassName("BottomNavBar")[0];
-    let CoulmnOne = document.getElementsByClassName("CoulmnOne")[0];
-    let CoulmnTwo = document.getElementsByClassName("CoulmnTwo")[0];
     setTimeout(() => {
         TheHeader.style = " animation: TheHeaderEdit .4s linear  ; opacity:1;";
-        CoulmnOne.style.animation = "TheCoulmnOneAni 0.7s linear";
-        CoulmnTwo.style.animation = "TheCoulmnTwoAni 0.7s linear";
     }, 10);
 
     // T25yr El Bottom Nav Bar 34an bysl m4akl lma y7sal El animation Bta3 El NavBar Top
@@ -18,7 +14,7 @@
         TheBottomNavBar.style.visibility = "visible"
         TheBottomNavBar.style.transition = "all .3s linear"
         TheBottomNavBar.style.animation = "TheBottomNavAni .5s linear"
-    }, 500);
+    },500);
     // TheSeachBarActive 
     let TheSearchBarActiveComponts = [...document.getElementsByClassName("ActiveOnClick")];
     let ExitMark = document.getElementsByClassName("ssss")[0];
@@ -101,32 +97,3 @@
 window.onresize = function(){
     location.reload();
 }
-// The Border when i click on the user
-let ProfIleAdd = [...document.getElementsByClassName("ProfIleAdd")];
-let TheEdit = [...document.getElementsByClassName("TheEdit")];
-ProfIleAdd.forEach((ele) => {
-    ele.addEventListener("click",() => {
-        ele.style.borderLeft = "10px solid #f58634"
-        ele.style.backgroundColor = "rgba(0, 0, 0, 0.267)"
-        TheEdit.forEach((ele) => {
-            ele.style.visibility = "visible"
-        })
-    })
-})
-// The masseage fun
-let TheSendBTN = document.getElementsByClassName("TheSendBTN")[0];
-let TheMassageParnt = document.getElementsByClassName("TheMassageBodyParnt")[0];
-function  MESSENGBody(TheText){
-    let TheBigBody = document.createElement("div");
-    TheBigBody.classList.add("TheMassageBody");
-    let TheMassageText = document.createElement("div");
-    TheMassageText.classList.add("TheMassegeELe")
-    TheMassageText.textContent = TheText;
-    TheBigBody.appendChild(TheMassageText);
-    TheMassageParnt.appendChild(TheBigBody);
-}
-let TheInputValue = document.getElementsByClassName("TheInputTwo")[0];
-TheSendBTN.addEventListener("click",() => {
-    MESSENGBody(TheInputValue.value)
-    TheInputValue.value = "";
-})
